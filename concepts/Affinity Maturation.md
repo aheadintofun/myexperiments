@@ -1,7 +1,7 @@
 # Affinity Maturation
 
 ## Definition
-The process by which B cells undergo iterative rounds of somatic hypermutation and selection in germinal centers, producing antibodies with progressively higher affinity for antigen. This is **real-time molecular evolution**—gradient descent on a fitness landscape defined by antigen binding affinity.
+The process by which B cells undergo iterative rounds of somatic hypermutation and [[Clonal Selection Theory|selection]] in germinal centers, producing antibodies with progressively higher affinity for antigen. This is **real-time molecular [[Fitness Landscapes|evolution]]**—gradient descent on a [[Fitness Landscapes|fitness landscape]] defined by antigen binding affinity.
 
 ## Germinal Center Reaction
 
@@ -21,9 +21,9 @@ The process by which B cells undergo iterative rounds of somatic hypermutation a
 
 **2. Selection (Light Zone)**
 - Mutated B cells migrate to light zone
-- Compete for antigen displayed on FDCs
+- Compete for [[Antigen Presentation|antigen displayed]] on FDCs
 - **High-affinity B cells** capture more antigen, receive survival signals from Tfh cells
-- **Low-affinity B cells** fail to capture antigen, undergo apoptosis
+- **Low-affinity B cells** fail to capture antigen, undergo [[Autophagy|apoptosis]]
 - Surviving B cells return to dark zone for another round
 
 **3. Iteration**
@@ -53,18 +53,18 @@ Concurrent process changing antibody effector function:
 
 ## Fitness Landscape Perspective
 
-**Sequence space**:
+**[[State Space|Sequence space]]**:
 - Dimensions: ~300 nucleotides in variable region
-- Landscape: Affinity as "height" (fitness)
-- **Rugged landscape**: Multiple local optima, epistasis common
+- [[Fitness Landscapes|Landscape]]: Affinity as "height" ([[Fitness Landscapes|fitness]])
+- **Rugged [[Fitness Landscapes|landscape]]**: Multiple local optima, epistasis common
 
 **Optimization dynamics**:
-- **Mutation**: Random walk in sequence space
-- **Selection**: Gradient ascent toward higher affinity
-- **Population**: Multiple B cells explore landscape in parallel
+- **Mutation**: Random walk in [[State Space|sequence space]]
+- **[[Clonal Selection Theory|Selection]]**: Gradient ascent toward higher affinity
+- **Population**: Multiple B cells explore [[Fitness Landscapes|landscape]] in parallel
 - **Tradeoff**: Mutation rate balances exploration vs exploitation
 
-This is **parallel stochastic gradient descent** with population-based exploration.
+This is **parallel stochastic gradient descent** with [[Clonal Architecture and Selection|population-based]] exploration.
 
 ## Affinity Improvement
 
@@ -106,16 +106,16 @@ This is **convergent molecular evolution**—different starting points reach sim
 
 ## Failure Modes
 
-**Autoimmunity**:
+**[[Autoimmunity]]**:
 - Mutations create self-reactive antibodies
-- Normally deleted by selection checkpoints
+- Normally deleted by [[Clonal Selection Theory|selection]] checkpoints
 - Failure → autoantibodies (lupus, rheumatoid arthritis)
 
 **Lymphoma**:
 - AID-induced mutations occasionally hit oncogenes (BCL6, MYC)
 - Germinal center B cells → B cell lymphoma
 
-High mutation rate is double-edged: Enables adaptation but risks pathology.
+High mutation rate is double-edged: Enables [[Perturbation-Response-Adaptation|adaptation]] but risks pathology.
 
 ## Related Concepts
 - [[Clonal Selection Theory]] - Population-level selection drives affinity maturation

@@ -1,6 +1,6 @@
 # Helical Structures in Biology
 
-Biology is saturated with helices: DNA, α-helices, collagen, bacterial flagella, microtubules, cochlear structure. This is not coincidence. Helices may be geodesics in constrained configuration spaces—and possibly echoes of deeper geometric structure.
+Biology is saturated with helices: DNA, α-helices, collagen, bacterial flagella, microtubules, cochlear structure. This is not coincidence. Helices may be geodesics in constrained [[State Space|configuration spaces]]—and possibly echoes of deeper [[Symmetry Breaking in Biological Systems|geometric structure]].
 
 ## The Ubiquity of Helices
 
@@ -16,14 +16,14 @@ The prevalence of right-handed helices is striking. Is there a geometric reason?
 
 ## Helices as Geodesics
 
-A helix on a cylinder is a geodesic—the shortest path between two points at different heights. But real biological helices don't live on cylinders. They live in high-dimensional configuration spaces constrained by:
+A helix on a cylinder is a geodesic—the shortest path between two points at different heights. But real biological helices don't live on cylinders. They live in high-dimensional [[State Space|configuration spaces]] constrained by:
 
 - Bond angles and lengths (covalent geometry)
 - Steric exclusion (atoms can't overlap)
 - Hydrogen bonding (stabilizing interactions)
-- Hydrophobic/hydrophilic patterning (environment)
+- Hydrophobic/hydrophilic patterning ([[Microenvironment Context|environment]])
 
-The helix is what emerges when you find the geodesic on this constraint manifold. See [[DNA Double Helix as Geodesic]] for the detailed treatment.
+The helix is what emerges when you find the geodesic on this [[Constrained Dynamics|constraint manifold]]. See [[DNA Double Helix as Geodesic]] for the detailed treatment.
 
 ## The Octonionic Speculation
 
@@ -64,15 +64,15 @@ This may be coincidence. But the ALT framework suggests dimensional relationship
 
 ## Helices and Information
 
-All major biological information carriers are helical:
-- DNA (genetic information)
+All major biological [[Information Compression in Biology|information]] carriers are helical:
+- DNA ([[Information Compression in Biology|genetic information]])
 - mRNA (transcribed information)
 - α-helices in transcription factors (regulatory information)
 - Collagen (structural information for ECM)
 
-If helices are geodesics—minimal paths through constraint space—then **information storage selects for geodesic geometry**. The helix is the most efficient encoding architecture.
+If helices are geodesics—minimal paths through [[Constrained Dynamics|constraint space]]—then **[[Information Compression in Biology|information storage]] selects for geodesic geometry**. The helix is the most efficient encoding architecture.
 
-This connects to [[Information Compression in Biology]]: the helix compresses the constraint satisfaction problem into a repeating, self-similar structure.
+This connects to [[Information Compression in Biology]]: the helix compresses the [[Constrained Dynamics|constraint satisfaction problem]] into a repeating, [[Hierarchical Composition|self-similar structure]].
 
 ## Open Questions
 

@@ -1,19 +1,19 @@
 # Morphogenesis as Graph Rewriting
 
 ## Definition
-Developmental tissue formation viewed as **iterative application of local graph rewriting rules** on a cellular network. Embryonic development = trajectory through graph space, starting from single vertex (zygote) and generating complex, structured organism graph.
+Developmental [[Tissue Topology|tissue]] formation viewed as **iterative application of [[Local Interaction|local graph rewriting rules]]** on a [[Network Topology|cellular network]]. [[Developmental Toolkit|Embryonic development]] = [[Trajectory and Branching Fate|trajectory]] through [[State Space|graph space]], starting from single [[Vertex Division|vertex]] (zygote) and generating complex, structured organism graph.
 
 ## Core Abstraction
 Traditional [[Morphogenesis]]:
-- Cells → shape changes, division, migration
-- Emergent form from local processes
+- Cells → shape changes, [[Cell Division as Vertex Division|division]], migration
+- [[Emergent Global Pattern|Emergent form]] from [[Local Interaction|local processes]]
 - No global blueprint
 
 **Graph rewriting perspective** ([[Graph Rewriting Automata]]):
-- Cells = vertices
+- Cells = [[Vertex Division|vertices]]
 - Adhesions/contacts = edges
-- Development = iterative local rewriting
-- Form emerges from topology evolution
+- [[Developmental Toolkit|Development]] = iterative [[Local Interaction|local rewriting]]
+- Form emerges from [[Dynamic Graph Topology|topology evolution]]
 
 Same biological process, different mathematical lens.
 
@@ -68,30 +68,30 @@ GRA rules encode genetic programs:
 
 ## Local Rules, Global Form
 No cell "knows" the organism-level architecture:
-- Each cell follows local rules ([[Local Configuration Space]])
-- Fate decisions based on position in morphogen gradient
-- Adhesion/division based on neighbor states
-- Yet coordinated global morphology emerges ([[Emergent Global Pattern]])
+- Each cell follows [[Local Interaction|local rules]] ([[Local Configuration Space]])
+- [[Trajectory and Branching Fate|Fate decisions]] based on position in morphogen gradient
+- Adhesion/[[Cell Division as Vertex Division|division]] based on neighbor states
+- Yet coordinated [[Emergent Global Pattern|global morphology]] emerges ([[Emergent Global Pattern]])
 
 **Example: Somitogenesis**
 - Clock-and-wavefront mechanism (local oscillator + gradient)
 - Cells segment based on local phase
 - Global: Periodic somites along body axis
 
-See [[Turing Pattern Formation]] for reaction-diffusion patterns.
+See [[Turing Pattern Formation]] for [[Signal Processing in Biological Systems|reaction-diffusion]] patterns.
 
 ## Robustness and Scaling
-Graph rewriting model explains developmental robustness:
+[[Graph Rewriting Automata|Graph rewriting]] model explains [[Robustness and Evolvability|developmental robustness]]:
 
-**Robustness to perturbations**:
-- Remove random vertices → regeneration via continued division
+**[[Robustness and Evolvability|Robustness]] to [[Perturbation-Response-Adaptation|perturbations]]**:
+- Remove random [[Vertex Division|vertices]] → regeneration via continued [[Cell Division as Vertex Division|division]]
 - Perturb gradients → self-correction via feedback
-- Local damage → compensatory growth
+- Local damage → compensatory [[Growth Dynamics in Networks|growth]]
 
 **Size regulation**:
-- Same genetic program → different final sizes (mouse vs. elephant)
-- Rules are **scale-invariant** (defined on local neighborhoods)
-- Global size emerges from resource constraints, not rule specification
+- Same [[Developmental Toolkit|genetic program]] → different final sizes (mouse vs. elephant)
+- Rules are **scale-invariant** (defined on [[Local Configuration Space|local neighborhoods]])
+- Global size emerges from resource [[Constrained Dynamics|constraints]], not rule specification
 
 ## Modularity and Hierarchical Composition
 Organogenesis produces [[Hierarchical Composition]]:

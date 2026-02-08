@@ -1,7 +1,7 @@
 # Clonal Selection Theory
 
 ## Definition
-Frank Macfarlane Burnet's framework (1957) explaining adaptive immunity: The immune system contains a diverse repertoire of lymphocytes with random receptor specificities. Antigen selects matching clones for expansion and differentiation. This is **Darwinian evolution in real-time**—variation, selection, amplification occurring over days rather than generations.
+Frank Macfarlane Burnet's framework (1957) explaining [[Adaptive Response|adaptive immunity]]: The [[Immune System as Phenotypic Boundary Hub|immune system]] contains a diverse [[Immune Repertoire as Compressed Model|repertoire]] of lymphocytes with random receptor specificities. Antigen selects matching clones for expansion and differentiation. This is **Darwinian [[Fitness Landscapes|evolution]] in real-time**—variation, selection, amplification occurring over days rather than generations.
 
 ## Core Principles
 
@@ -20,9 +20,9 @@ Frank Macfarlane Burnet's framework (1957) explaining adaptive immunity: The imm
 - Most will never encounter their cognate antigen
 
 ### Antigen Encounter
-- Pathogen enters body (e.g., virus, bacteria)
-- Pathogen antigens displayed by antigen-presenting cells (APCs)
-- Lymphocytes with matching receptors bind antigen (recognition event)
+- Pathogen enters body (e.g., virus, [[Bacteria|bacteria]])
+- Pathogen antigens displayed by [[Antigen Presentation|antigen-presenting cells (APCs)]]
+- Lymphocytes with matching receptors bind antigen ([[Self-Nonself Discrimination|recognition event]])
 - **Probability of match**: ~1-100 cells out of billions initially recognize new antigen
 
 ### Clonal Expansion
@@ -40,13 +40,13 @@ Each activated clone produces:
 
 ## Evolutionary Analogy
 
-**Germline mutation** in organismal evolution → **Somatic recombination** in immune evolution:
-- **Variation**: V(D)J recombination generates receptor diversity
-- **Selection**: Antigen binding determines fitness
-- **Inheritance**: Clonal expansion propagates successful variants
+**Germline mutation** in organismal evolution → **Somatic recombination** in [[Immune Repertoire as Compressed Model|immune evolution]]:
+- **Variation**: V(D)J recombination generates [[Immune Repertoire as Compressed Model|receptor diversity]]
+- **Selection**: Antigen binding determines [[Fitness Landscapes|fitness]]
+- **Inheritance**: [[Clonal Architecture and Selection|Clonal expansion]] propagates successful variants
 - **Timescale**: Days to weeks (not generations)
 
-The immune system is an **evolvable system within the organism**.
+The [[Immune System as Phenotypic Boundary Hub|immune system]] is an **evolvable system within the organism**.
 
 ## Mathematical Framework
 
@@ -77,10 +77,10 @@ This is **selection on fitness landscape** defined by binding affinity.
 
 ## Clonal Selection Across Domains
 
-The same framework applies beyond immunity:
-- **Cancer evolution**: Tumor clones under treatment selection
+The same framework applies beyond [[Immune System as Phenotypic Boundary Hub|immunity]]:
+- **Cancer evolution**: [[Tumor Immune Evasion|Tumor]] clones under treatment selection
 - **Somatic evolution**: Tissue mosaicism, aging
-- **Breeding**: Artificial selection of crop/livestock variants
+- **Breeding**: [[Fitness Landscapes|Artificial selection]] of crop/livestock variants
 - **Microbial populations**: Antibiotic resistance
 
 See [[Clonal Architecture and Selection]] for cross-domain applications.

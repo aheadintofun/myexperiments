@@ -1,26 +1,26 @@
 # Tree of Life Hub
 
 ## Overview
-The phylogenetic tree of life is not merely taxonomy—it is a **record of major organizational transitions**, each representing a **fundamental shift in biological architecture, symmetry breaking, or constraint relaxation**.
+The phylogenetic tree of life is not merely taxonomy—it is a **record of major [[Hierarchical Composition|organizational transitions]]**, each representing a **fundamental shift in biological architecture, [[Symmetry Breaking in Biological Systems|symmetry breaking]], or [[Constrained Dynamics|constraint]] relaxation**.
 
-This hub focuses on **what changed abstractly** at each transition, not just lineage splitting. What new organizational principle emerged? What constraint was overcome? What symmetry broke?
+This hub focuses on **what changed abstractly** at each transition, not just lineage splitting. What new [[Emergent Global Pattern|organizational principle]] emerged? What [[Constrained Dynamics|constraint]] was overcome? What [[Symmetry Breaking in Biological Systems|symmetry]] broke?
 
 ## Three Domains of Life
 
 ### [[Bacteria]]
 - Prokaryotic, no nucleus
-- Horizontal gene transfer, modular genome
-- Metabolic diversity (photosynth, chemosynthesis, fermentation)
+- Horizontal gene transfer, [[Domain as Modular Unit|modular]] genome
+- Metabolic [[Degeneracy in Biological Systems|diversity]] (photosynth, chemosynthesis, fermentation)
 
 ### [[Archaea]]
-- Prokaryotic but distinct from Bacteria
+- Prokaryotic but distinct from [[Bacteria]]
 - Unique membrane chemistry (ether lipids)
 - Extremophiles (thermophiles, halophiles, methanogens)
 
 ### [[Eukarya]]
 - Nuclear envelope, membrane-bound organelles
-- Endosymbiotic origin (mitochondria, chloroplasts)
-- Complex multicellularity enabled
+- [[Endosymbiosis|Endosymbiotic]] origin (mitochondria, chloroplasts)
+- Complex [[Multicellularity as Cooperation|multicellularity]] enabled
 
 ## Major Transitions (Abstract Principles)
 
@@ -31,18 +31,18 @@ This hub focuses on **what changed abstractly** at each transition, not just lin
 - **Metabolism-first vs. replication-first**: Which came first?
 
 ### [[Prokaryote to Eukaryote Transition]]
-**What changed**: Compartmentalization, endosymbiosis, scale-up
-- **Endosymbiosis**: Captured bacteria become organelles (Lynn Margulis)
+**What changed**: [[Hierarchical Composition|Compartmentalization]], [[Endosymbiosis|endosymbiosis]], scale-up
+- **[[Endosymbiosis]]**: Captured [[Bacteria|bacteria]] become organelles (Lynn Margulis)
 - **Nuclear envelope**: Separates transcription/translation (regulatory opportunity)
-- **Cytoskeleton**: Intracellular transport, dynamic structure
+- **Cytoskeleton**: Intracellular transport, [[Dynamic Graph Topology|dynamic structure]]
 - **Larger size**: 10-100x volume increase
 
 ### [[Unicellular to Multicellular Transition]]
-**What changed**: Individual → collective, competition → cooperation
-- **Cell adhesion**: Cells remain together post-division
-- **Differentiation**: Same genome, different cell fates
+**What changed**: Individual → collective, competition → [[Multicellularity as Cooperation|cooperation]]
+- **Cell adhesion**: Cells remain together post-[[Cell Division as Vertex Division|division]]
+- **Differentiation**: Same genome, different [[Trajectory and Branching Fate|cell fates]]
 - **Division of labor**: Specialized cell types (soma, germline)
-- **Cheater suppression**: Evolutionary mechanisms enforce cooperation
+- **Cheater suppression**: [[Evolutionary Tinkering|Evolutionary]] mechanisms enforce [[Multicellularity as Cooperation|cooperation]]
 
 ### [[Plant-Animal Divergence]]
 **What changed**: Autotrophy vs. heterotrophy, sessile vs. mobile strategies
@@ -52,11 +52,11 @@ This hub focuses on **what changed abstractly** at each transition, not just lin
 - **Nervous system**: Animals evolved centralized information processing
 
 ### [[Vertebrate Innovations]]
-**What changed**: Neural crest, endoskeleton, adaptive immunity
-- **Neural crest**: Embryonic cell population enabling craniofacial complexity, peripheral nervous system
+**What changed**: Neural crest, endoskeleton, [[Adaptive Response|adaptive immunity]]
+- **Neural crest**: [[Developmental Toolkit|Embryonic]] cell population enabling craniofacial complexity, peripheral nervous system
 - **Endoskeleton**: Internal support (vs. exoskeleton), enables larger size
-- **Adaptive immunity**: V(D)J recombination, somatic hypermutation
-- **Cephalization**: Brain centralization, sensory organs concentrated anteriorly
+- **[[Adaptive Response|Adaptive immunity]]**: V(D)J recombination, [[Affinity Maturation|somatic hypermutation]]
+- **[[Cephalization]]**: Brain centralization, sensory organs concentrated anteriorly
 
 ### [[Mammalian Innovations]]
 **What changed**: Endothermy, live birth, parental investment, neocortex
@@ -96,14 +96,14 @@ See [[Hierarchical Composition]]: Each transition adds a new organizational leve
 
 ```
 Prebiotic molecules
-└─> Cells (Origin of Life)
-    └─> Eukaryotic cells (Endosymbiosis)
-        └─> Multicellular organisms (Cooperation)
-            └─> Complex organisms (Specialized tissues/organs)
+└─> Cells ([[Origin of Life]])
+    └─> [[Eukarya|Eukaryotic cells]] ([[Endosymbiosis]])
+        └─> [[Multicellularity as Cooperation|Multicellular organisms]] ([[Multicellularity as Cooperation|Cooperation]])
+            └─> Complex organisms (Specialized [[Tissue Topology|tissues]]/organs)
                 └─> Social groups (Eusociality, human societies)
 ```
 
-At each level, new **emergent properties** arise.
+At each level, new **[[Emergent Global Pattern|emergent properties]]** arise.
 
 ## Symmetry Breaking Events
 See [[Symmetry Breaking in Biological Systems]]:

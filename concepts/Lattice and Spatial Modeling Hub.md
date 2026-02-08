@@ -2,9 +2,9 @@
 
 ## Conceptual Overview
 
-Biological systems are fundamentally **spatial**—cells arranged in tissues, organisms distributed across landscapes, neurons wired in networks. The lattice framework provides a universal computational substrate for modeling these spatial structures and their dynamics.
+Biological systems are fundamentally **spatial**—cells arranged in [[Tissue Topology|tissues]], organisms distributed across landscapes, neurons wired in [[Network Topology|networks]]. The [[Heterogeneous Lattice|lattice]] framework provides a universal computational substrate for modeling these spatial structures and their dynamics.
 
-The unifying thread: **local interactions produce global patterns**. Each lattice site represents an agent (cell, organism, person) whose state evolves according to rules that depend only on its local neighborhood. Emergent complexity arises not from complicated individual behavior, but from simple rules iterated across space and time.
+The unifying thread: **[[Local Interaction|local interactions]] produce [[Emergent Global Pattern|global patterns]]**. Each [[Heterogeneous Lattice|lattice]] site represents an agent (cell, organism, person) whose [[State Space|state]] evolves according to [[Update Rule as Fundamental Unit|rules]] that depend only on its [[Local Configuration Space|local neighborhood]]. [[Emergent Global Pattern|Emergent]] complexity arises not from complicated individual behavior, but from simple [[Update Rule as Fundamental Unit|rules]] iterated across space and time.
 
 ## Core Framework
 
@@ -38,27 +38,27 @@ The unifying thread: **local interactions produce global patterns**. Each lattic
 ## Conceptual Ladder
 
 ### Foundation: Regular Lattices
-**[[Cellular Automata Framework]]** - The canonical structure: grid topology, state vectors at each site, synchronous updates from local rules. This is the Conway's Game of Life paradigm.
+**[[Cellular Automata Framework]]** - The canonical structure: grid [[Network Topology|topology]], [[State Space|state vectors]] at each site, synchronous updates from [[Local Interaction|local rules]]. This is the Conway's Game of Life paradigm.
 
 ### Generalization 1: Non-Uniform Topology
-**[[Heterogeneous Lattice]]** - Not all sites need the same connectivity. Tissue microarchitecture has blood vessels, stromal cells, immune cells with different neighbor counts and interaction types.
+**[[Heterogeneous Lattice]]** - Not all sites need the same connectivity. [[Tissue Topology|Tissue]] [[Microenvironment Context|microarchitecture]] has blood vessels, stromal cells, [[Immune System as Phenotypic Boundary Hub|immune cells]] with different neighbor counts and [[Local Interaction|interaction types]].
 
 ### Generalization 2: Hierarchical Nesting
 **[[Multi-Scale Lattice]]** - Each lattice site is itself a lattice. Protein networks inside cells, cells inside tissues, tissues inside organisms, organisms inside populations. Renormalization appears naturally.
 
 ### Generalization 3: Arbitrary Networks
-**[[Graph Cellular Automata]]** - Replace regular grid with arbitrary graph. Social networks, protein interaction networks, ecological food webs—all become special cases of the lattice framework.
+**[[Graph Cellular Automata]]** - Replace regular grid with arbitrary graph. Social [[Network Topology|networks]], protein interaction [[Network Topology|networks]], ecological food webs—all become special cases of the [[Heterogeneous Lattice|lattice]] framework.
 
 ### Primitive: The Update Rule
-**[[Update Rule as Fundamental Unit]]** - The algebraic atom of lattice dynamics. Each boundary interaction is a function mapping neighborhood state to next state. Composition of update rules generates system evolution.
+**[[Update Rule as Fundamental Unit]]** - The algebraic atom of [[Heterogeneous Lattice|lattice]] [[Biological Dynamics Hub|dynamics]]. Each boundary [[Local Interaction|interaction]] is a [[Transfer Functions|function]] mapping [[Local Configuration Space|neighborhood state]] to next state. Composition of [[Update Rule as Fundamental Unit|update rules]] generates system [[Trajectory and Branching Fate|evolution]].
 
 ## Cross-Scale Phenomena
 
 ### Spatial Context Matters
-**[[Microenvironment Context]]** - A cell's phenotype depends on its neighbors. T cell activation requires the right antigen-presenting cell in the right tissue context. Tumor cells behave differently at invasion front vs core.
+**[[Microenvironment Context]]** - A cell's [[Genotype-to-Phenotype Hub|phenotype]] depends on its neighbors. T cell activation requires the right [[Antigen Presentation|antigen-presenting cell]] in the right [[Tissue Topology|tissue]] [[Context Conditionality|context]]. [[Tumor Immune Evasion|Tumor]] cells behave differently at invasion front vs core.
 
 ### Communication Across Scales
-**[[Cross-Boundary Signaling]]** - Information flows between hierarchical levels. Hormones carry organism-level state to tissue-level decisions. Intracellular calcium oscillations coordinate multicellular waves.
+**[[Cross-Boundary Signaling]]** - [[Information Compression in Biology|Information]] flows between [[Hierarchical Composition|hierarchical levels]]. Hormones carry organism-level state to [[Tissue Topology|tissue]]-level decisions. Intracellular calcium oscillations coordinate multicellular waves.
 
 ## Mathematical Foundations
 
@@ -95,13 +95,13 @@ This is the renormalization problem. See [[Renormalization in Biological Systems
 
 ## Key Insights
 
-1. **Topology encodes constraints**: Regular grids impose geometric order. Random graphs enable small-world connectivity. Hierarchical lattices create scale separation.
+1. **[[Network Topology|Topology]] encodes [[Constrained Dynamics|constraints]]**: Regular grids impose geometric order. Random graphs enable small-world connectivity. [[Hierarchical Composition|Hierarchical lattices]] create scale separation.
 
-2. **Local rules, global consequences**: No central controller. Patterns emerge from distributed interactions.
+2. **[[Local Interaction|Local rules]], [[Emergent Global Pattern|global consequences]]**: No central controller. [[Turing Pattern Formation|Patterns]] emerge from distributed [[Local Interaction|interactions]].
 
-3. **Same formalism, different scales**: The cellular automaton framework applies from proteins to ecosystems—only the physical interpretation changes.
+3. **Same formalism, different scales**: The [[Cellular Automata Framework|cellular automaton]] framework applies from proteins to ecosystems—only the physical interpretation changes.
 
-4. **Renormalization is inevitable**: Multiscale systems require coarse-graining. Effective theories at each scale.
+4. **[[Renormalization in Biological Systems|Renormalization]] is inevitable**: [[Multi-Scale Lattice|Multiscale]] systems require coarse-graining. Effective theories at each scale.
 
 ## Design Patterns
 

@@ -1,7 +1,7 @@
 # Domain as Modular Unit
 
 ## Definition
-A protein domain is a conserved, independently folding structural and functional unit (typically 50-400 amino acids) that serves as an evolutionary building block. Domains are the "atoms" of protein architecture—stable, reusable, combinable.
+A protein domain is a conserved, independently [[Protein Structure Prediction|folding]] structural and [[Functional Capacity|functional]] unit (typically 50-400 amino acids) that serves as an [[Evolutionary Tinkering|evolutionary]] building block. Domains are the "atoms" of [[Proteome Complexity from Domain Combinatorics|protein architecture]]—stable, reusable, combinable.
 
 ## Key Properties
 
@@ -12,15 +12,15 @@ A protein domain is a conserved, independently folding structural and functional
 - **Clear boundaries**: Minimal entanglement with neighboring domains
 
 ### Evolutionary Mobility
-- **Conserved across species**: Same domain in diverse organisms
-- **Promiscuous contexts**: Found in many different multi-domain proteins
+- **[[Conservation Laws in Living Systems|Conserved]] across species**: Same domain in diverse organisms
+- **[[Protein Promiscuity|Promiscuous]] contexts**: Found in many different multi-domain proteins
 - **Exon correspondence**: Often encoded by contiguous exon blocks
 - **Recombination hotspots**: Domain boundaries are sites of genetic exchange
 
 ### Functional Modularity
-- **Discrete function**: Each domain performs specific biochemical task
-- **Combinable**: Functions compose when domains combine
-- **Context-independent** (often): Same domain, same function in different proteins
+- **Discrete [[Functional Capacity|function]]**: Each domain performs specific biochemical task
+- **Combinable**: [[Functional Capacity|Functions]] compose when domains combine
+- **[[Context Conditionality|Context]]-independent** (often): Same domain, same [[Functional Capacity|function]] in different proteins
 
 ## Domain Families
 Approximately **10,000 distinct domain families** (Pfam database):
@@ -50,7 +50,7 @@ Multi-domain proteins as "Lego constructions":
 - **Permutational**: A-B distinct from B-A
 - **Copy number**: Variable domain repeats (immunoglobulin superfamily)
 
-Result: **Proteome complexity from limited domain inventory**
+Result: **[[Proteome Complexity from Domain Combinatorics|Proteome complexity]] from limited domain inventory**
 
 ## Evolutionary Mechanism: Exon Shuffling
 - **Domains** ≈ exons (coding regions)
@@ -61,11 +61,11 @@ Result: **Proteome complexity from limited domain inventory**
 Exon shuffling is the molecular mechanism of domain shuffling.
 
 ## Domain Boundaries as Dissection Cuts
-In protein equidecomposability framework:
+In [[Protein Equidecomposability|protein equidecomposability]] framework:
 - **Domains** = pieces
 - **Domain boundaries** = cut lines
-- **Rearrangement** = shuffling during evolution
-- **Conservation**: Domain structure preserved across contexts
+- **Rearrangement** = [[Protein Domain Shuffling|shuffling]] during [[Evolutionary Tinkering|evolution]]
+- **[[Conservation Laws in Living Systems|Conservation]]**: Domain structure preserved across [[Context Conditionality|contexts]]
 
 ## Classification and Databases
 - **Pfam**: Domain family database (~10,000 families)
@@ -75,11 +75,11 @@ In protein equidecomposability framework:
 
 ## Functional Consequences
 Domain modularity enables:
-1. **Rapid evolution**: Recombine existing functions
-2. **Functional specialization**: Optimize individual domains independently
-3. **Regulatory complexity**: Multi-domain proteins integrate multiple signals
-4. **Robustness**: Domain redundancy across proteome
-5. **Evolvability**: Explore functional space via combinations
+1. **Rapid [[Evolutionary Tinkering|evolution]]**: Recombine existing [[Functional Capacity|functions]]
+2. **[[Functional Capacity|Functional]] specialization**: Optimize individual domains independently
+3. **Regulatory complexity**: Multi-domain proteins integrate multiple [[Signal Processing in Biological Systems|signals]]
+4. **[[Robustness and Evolvability|Robustness]]**: Domain [[Degeneracy in Biological Systems|redundancy]] across proteome
+5. **[[Robustness and Evolvability|Evolvability]]**: Explore [[Functional Capacity|functional]] space via combinations
 
 ## Related Concepts
 - [[Protein Domain Shuffling]] - Recombination mechanism

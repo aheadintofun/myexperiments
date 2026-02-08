@@ -1,24 +1,24 @@
 # Protein Equidecomposability
 
 ## Definition
-Explicit application of geometric equidecomposability to proteins: the same structural "pieces" (domains, motifs, subunits) are rearranged—physically or functionally—to achieve different biological functions while conserving structural elements.
+Explicit application of geometric [[Equidecomposability|equidecomposability]] to proteins: the same structural "pieces" ([[Domain as Modular Unit|domains]], motifs, subunits) are rearranged—physically or functionally—to achieve different [[Functional Capacity|biological functions]] while conserving structural elements.
 
 ## Manifestations
 
 ### Physical Rearrangement: Domain Shuffling
-Protein domains are literally "cut and pasted" during evolution:
-- **Exon shuffling** recombines modular domains
-- Same domains, different orders/combinations → new proteins
-- ~10,000 domain families create millions of proteins
-- **Conservation**: Domain structure preserved
-- **Variation**: Domain architecture varies
+[[Domain as Modular Unit|Protein domains]] are literally "cut and pasted" during [[Evolutionary Tinkering|evolution]]:
+- **[[Protein Domain Shuffling|Exon shuffling]]** recombines [[Domain as Modular Unit|modular domains]]
+- Same [[Domain as Modular Unit|domains]], different orders/combinations → new proteins
+- ~10,000 [[Domain as Modular Unit|domain families]] create millions of proteins
+- **[[Conservation Laws in Living Systems|Conservation]]**: [[Domain as Modular Unit|Domain structure]] preserved
+- **Variation**: [[Proteome Complexity from Domain Combinatorics|Domain architecture]] varies
 
 ### Functional Rearrangement: Moonlighting
-Same polypeptide performs unrelated functions in different contexts:
+Same polypeptide performs unrelated [[Functional Capacity|functions]] in different [[Context Conditionality|contexts]]:
 - **Crystallins**: Lens structure + metabolic enzymes
 - **GAPDH**: Glycolysis + transcription + apoptosis
-- **Conservation**: Amino acid sequence and structure
-- **Variation**: Cellular context determines active function
+- **[[Conservation Laws in Living Systems|Conservation]]**: Amino acid sequence and structure
+- **Variation**: [[Microenvironment Context|Cellular context]] determines active [[Moonlighting Proteins|function]]
 
 ### Assembly Rearrangement: Oligomeric Switching
 Same subunits assemble into different quaternary structures:
@@ -28,11 +28,11 @@ Same subunits assemble into different quaternary structures:
 - **Variation**: Assembly geometry and function
 
 ### Conformational Rearrangement: Fold Switching
-Same sequence adopts different 3D folds:
+Same sequence adopts different [[Protein Structure Prediction|3D folds]]:
 - **RfaH**: α-helix ↔ β-barrel
 - **Lymphotactin**: All-β ↔ all-α
-- **Conservation**: Primary sequence
-- **Variation**: Secondary/tertiary structure and function
+- **[[Conservation Laws in Living Systems|Conservation]]**: Primary sequence
+- **Variation**: Secondary/tertiary structure and [[Fold Switching|function]]
 
 ## Connection to Geometric Equidecomposability
 
@@ -73,11 +73,11 @@ What varies?
 4. **Regulation**: Allosteric sites, PTM sites
 
 ## Evolutionary Implications
-Protein equidecomposability enables:
+[[Equidecomposability|Protein equidecomposability]] enables:
 - **Rapid innovation**: Recombine existing parts, don't build from scratch
-- **Functional exploration**: Same structure, multiple functional trials
-- **Robustness**: Degeneracy through alternative assemblies
-- **Evolvability**: Modular changes without disrupting whole protein
+- **[[Functional Capacity|Functional]] exploration**: Same structure, multiple [[Multifunctionality and Evolvability|functional trials]]
+- **[[Robustness and Evolvability|Robustness]]**: [[Degeneracy in Biological Systems|Degeneracy]] through alternative assemblies
+- **[[Robustness and Evolvability|Evolvability]]**: [[Domain as Modular Unit|Modular]] changes without disrupting whole protein
 
 ## Quantifying Protein Dissection
 Minimal dissection = minimal number of:

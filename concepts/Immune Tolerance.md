@@ -1,20 +1,20 @@
 # Immune Tolerance
 
 ## Definition
-The active maintenance of non-reactivity to self-antigens. Not the mere absence of immune response, but specific cellular and molecular mechanisms that suppress potentially autoreactive lymphocytes. Tolerance is the enforced boundary between self and non-self.
+The active maintenance of non-reactivity to self-antigens. Not the mere absence of [[Adaptive Response|immune response]], but specific cellular and molecular mechanisms that suppress potentially autoreactive lymphocytes. Tolerance is the enforced [[Immune System as Phenotypic Boundary Hub|boundary]] between [[Self-Nonself Discrimination|self and non-self]].
 
 ## Central vs Peripheral Tolerance
 
 ### Central Tolerance (Primary Lymphoid Organs)
 **Thymus (T cells)**:
 - Positive selection: T cells recognizing self-MHC survive
-- Negative selection: High-affinity self-reactive T cells deleted (apoptosis)
+- Negative selection: High-affinity self-reactive T cells deleted ([[Autophagy|apoptosis]])
 - AIRE-mediated expression: Tissue antigens displayed for tolerance induction
 - Result: ~95% of developing T cells eliminated
 
 **Bone marrow (B cells)**:
 - Receptor editing: Self-reactive BCRs undergo secondary rearrangement
-- Clonal deletion: High-affinity self-reactive B cells eliminated
+- [[Clonal Selection Theory|Clonal]] deletion: High-affinity self-reactive B cells eliminated
 - Anergy induction: Functional inactivation of moderate self-reactivity
 
 ### Peripheral Tolerance (Tissues)
@@ -61,10 +61,10 @@ Mutation in FoxP3 (Treg transcription factor):
 Tolerance is not default non-response but **active suppression**:
 - Energy expenditure: Maintaining Treg populations
 - Continuous surveillance: Monitoring for autoreactive cells
-- Context integration: Same antigen → tolerance or immunity based on danger signals
-- Learned representation: Tolerance shaped by developmental exposure
+- [[Context Conditionality|Context]] integration: Same antigen → tolerance or [[Adaptive Response|immunity]] based on [[Danger Theory|danger signals]]
+- Learned representation: Tolerance shaped by [[Developmental Toolkit|developmental]] exposure
 
-This is computational work—phenotypic boundary enforcement costs resources.
+This is computational work—[[Immune System as Phenotypic Boundary Hub|phenotypic boundary]] enforcement costs resources.
 
 ## Induction of Tolerance (Therapeutic)
 

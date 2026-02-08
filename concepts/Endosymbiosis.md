@@ -1,7 +1,7 @@
 # Endosymbiosis
 
 ## Definition
-A symbiotic relationship where one organism (**endosymbiont**) lives inside another (**host**), and the relationship becomes permanent and heritable. **Transformative merger** creating a new composite organism.
+A symbiotic relationship where one organism (**endosymbiont**) lives inside another (**host**), and the relationship becomes permanent and heritable. **Transformative merger** creating a new [[Hierarchical Composition|composite organism]].
 
 ## Core Principle
 **Abstraction**: **1 + 1 = 1 (new)**.
@@ -11,16 +11,16 @@ Two independent organisms fuse into single entity with emergent properties neith
 ## Canonical Example: Eukaryotic Origin
 
 ### Mitochondria
-**What happened**: Ancestral eukaryote (archaeon) engulfed α-proteobacterium (~1.5-2.0 billion years ago).
+**What happened**: Ancestral [[Eukarya|eukaryote]] ([[Archaea|archaeon]]) engulfed α-proteobacterium (~1.5-2.0 billion years ago).
 
 **Evidence**:
 1. **Own DNA**: Circular chromosome (bacterial-style), ~16 kb in humans
 2. **Own ribosomes**: 70S (prokaryotic), not 80S (eukaryotic)
 3. **Double membrane**: Inner = bacterial membrane, outer = host phagosome
 4. **Phylogeny**: Mitochondrial genes cluster with α-proteobacteria
-5. **Division**: Binary fission (like bacteria), not synchronized with cell division
+5. **Division**: Binary fission (like [[Bacteria|bacteria]]), not synchronized with [[Cell Division as Vertex Division|cell division]]
 
-**Consequence**: **10-100x ATP production** → enabled eukaryotic complexity.
+**Consequence**: **10-100x ATP production** → enabled [[Eukarya|eukaryotic]] complexity.
 
 ### Chloroplasts (Plants, Algae)
 **What happened**: Eukaryote engulfed cyanobacterium (~1.0-1.5 Gya).
@@ -72,9 +72,9 @@ Some protists acquired chloroplasts by **engulfing eukaryotic algae**:
 ## Why Did It Succeed?
 
 ### Energy Hypothesis (Nick Lane)
-- **Prokaryotes**: Energy production limited by surface area (respiratory chain on membrane)
-- **Eukaryotes**: Mitochondria provide internal energy source
-- **Consequence**: Genome size, complexity no longer constrained by cell surface
+- **[[Prokaryote to Eukaryote Transition|Prokaryotes]]**: Energy production limited by surface area (respiratory chain on membrane)
+- **[[Eukarya|Eukaryotes]]**: Mitochondria provide internal energy source
+- **Consequence**: Genome size, [[Hierarchical Composition|complexity]] no longer constrained by cell surface
 
 ### Symbiotic Advantage
 - **Division of labor**: Host manages cell structure, endosymbiont manages energy
@@ -125,8 +125,8 @@ Some protists acquired chloroplasts by **engulfing eukaryotic algae**:
 ### Enabled Eukaryotic Complexity
 See [[Prokaryote to Eukaryote Transition]]:
 - Mitochondria → energy scaling
-- Nucleus + mitochondria → eukaryotic cell plan
-- **Consequence**: Multicellularity, complex organisms possible
+- Nucleus + mitochondria → [[Eukarya|eukaryotic]] cell plan
+- **Consequence**: [[Multicellularity as Cooperation|Multicellularity]], complex organisms possible
 
 ### Rare Event
 Endosymbiosis (organellar level) is **exceedingly rare**:

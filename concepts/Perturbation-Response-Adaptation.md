@@ -1,7 +1,7 @@
 # Perturbation-Response-Adaptation
 
 ## Definition
-The universal biological cycle: a system in baseline state receives a perturbation, exhibits a response trajectory, and settles into an adapted endpoint. This is the **genotype-phenotype map in motion**—not static, but a dynamic transfer function.
+The universal biological cycle: a system in baseline state receives a perturbation, exhibits a response [[Trajectory and Branching Fate|trajectory]], and settles into an [[Adaptive Response|adapted]] endpoint. This is the **[[Genotype-to-Phenotype Hub|genotype-phenotype map]] in motion**—not static, but a dynamic [[Transfer Functions|transfer function]].
 
 ## Canonical Structure
 1. **Baseline state**: Equilibrium before perturbation
@@ -13,18 +13,18 @@ The universal biological cycle: a system in baseline state receives a perturbati
 ## Domain Examples
 
 ### Drug Treatment
-- Baseline: Pre-treatment tumor or pathogen
+- Baseline: Pre-treatment [[Tumor Immune Evasion|tumor]] or pathogen
 - Perturbation: Chemotherapy, antibiotic, immunotherapy
-- Response: Cell death, stress response activation
-- Adaptation: Resistant subclones emerge
-- Selection: Drug-resistant mutations expand
+- Response: Cell death, [[Adaptive Response|stress response]] activation
+- [[Adaptive Response|Adaptation]]: Resistant [[Clonal Architecture and Selection|subclones]] emerge
+- [[Clonal Selection Theory|Selection]]: Drug-resistant mutations expand
 
 ### Immune Challenge
-- Baseline: Naive immune repertoire
+- Baseline: [[Immune Repertoire as Compressed Model|Naive immune repertoire]]
 - Perturbation: Pathogen exposure
-- Response: Clonal expansion of antigen-specific cells
-- Adaptation: Memory cell formation, affinity maturation
-- Selection: High-affinity clones dominate
+- Response: [[Clonal Selection Theory|Clonal expansion]] of antigen-specific cells
+- [[Adaptive Response|Adaptation]]: [[Immunological Memory|Memory cell]] formation, [[Affinity Maturation|affinity maturation]]
+- [[Clonal Selection Theory|Selection]]: High-affinity clones dominate
 
 ### Environmental Stress (Agriculture)
 - Baseline: Optimal growth conditions
@@ -51,7 +51,7 @@ Where:
 - $\mathbf{c}$: Context vector
 
 ## Key Insight
-The response is not instantaneous state change but a **trajectory**. The path through state space contains information about mechanism, constraints, and evolutionary potential.
+The response is not instantaneous state change but a **[[Trajectory and Branching Fate|trajectory]]**. The path through [[State Space|state space]] contains [[Information Compression in Biology|information]] about mechanism, [[Constrained Dynamics|constraints]], and [[Robustness and Evolvability|evolutionary potential]].
 
 ## Related Concepts
 - [[Trajectory and Branching Fate]] - Response as trajectory through state space

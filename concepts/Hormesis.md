@@ -1,7 +1,7 @@
 # Hormesis
 
 ## Definition
-A biphasic dose-response phenomenon where low doses of a stressor produce beneficial effects while high doses are harmful. The organism responds to controlled stress by enhancing its functional capacity beyond baseline—a paradoxical improvement through challenge.
+A biphasic [[Dose-Response Relationship|dose-response]] phenomenon where low doses of a stressor produce beneficial effects while high doses are harmful. The organism responds to controlled stress by enhancing its [[Functional Capacity|functional capacity]] beyond baseline—a paradoxical improvement through challenge.
 
 ## Examples
 
@@ -12,7 +12,7 @@ A biphasic dose-response phenomenon where low doses of a stressor produce benefi
 
 ### Caloric Restriction / Fasting
 - Acute stress: Nutrient deprivation
-- Response: Autophagy, stress resistance pathways, metabolic flexibility
+- Response: [[Autophagy]], stress resistance pathways, metabolic flexibility
 - Chronic benefit: Extended healthspan, improved insulin sensitivity
 
 ### Heat/Cold Exposure
@@ -46,18 +46,18 @@ Benefit
 
 ## Mechanism: Overcompensation
 1. Stressor causes controlled damage
-2. Adaptive response triggered
+2. [[Adaptive Response|Adaptive response]] triggered
 3. System overcompensates—builds back stronger
-4. Net result: Enhanced capacity
+4. Net result: Enhanced [[Functional Capacity|capacity]]
 
-This is **selective catabolism → enhanced anabolism** in action.
+This is **[[Selective Catabolism|selective catabolism]] → enhanced anabolism** in action.
 
 ## Lattice Framework Interpretation
-Hormetic stress induces a controlled dissection-reassembly cycle:
-- Lattice partially disassembles (selective catabolism)
+Hormetic stress induces a controlled [[Equidecomposability|dissection-reassembly]] cycle:
+- [[Heterogeneous Lattice|Lattice]] partially disassembles ([[Selective Catabolism|selective catabolism]])
 - Resources reallocated
-- Lattice reassembles with improved configuration
-- Quality metric increases with each cycle
+- [[Heterogeneous Lattice|Lattice]] reassembles with improved configuration
+- [[Quality Control in Living Systems|Quality metric]] increases with each cycle
 
 ## Related Concepts
 - [[Cachexia Inversion]] - Hormesis as therapeutic principle
