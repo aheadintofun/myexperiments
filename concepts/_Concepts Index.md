@@ -310,6 +310,24 @@ System Dynamics (temporal behavior)
 └── Immune Checkpoints (feedback control)
 ```
 
+### Protein Multifunctionality and Modularity Family
+```
+Protein Equidecomposability (root framework)
+├── Multifunctionality Mechanisms
+│   ├── Moonlighting Proteins (same structure, multiple functions)
+│   ├── Oligomeric State Switching (assembly determines function)
+│   ├── Fold Switching (conformational plasticity)
+│   └── Protein Promiscuity (catalytic versatility)
+├── Modularity and Combinatorics
+│   ├── Domain as Modular Unit (independently folding building blocks)
+│   ├── Protein Domain Shuffling (exon shuffling, recombination)
+│   └── Proteome Complexity from Domain Combinatorics (10⁴ domains → 10⁶ proteins)
+└── Evolutionary Implications
+    ├── Functional Degeneracy in Proteins (many proteins → one function)
+    ├── Evolutionary Tinkering (bricolage with available parts)
+    └── Multifunctionality and Evolvability (preadaptation, evolutionary capacitance)
+```
+
 ## Computational Methods & AI Biology Tools
 See [[Computational Biology Tools Hub]] for comprehensive overview.
 
@@ -319,6 +337,26 @@ See [[Computational Biology Tools Hub]] for comprehensive overview.
 - [[Diffusion-Based Protein Design]] - Generative modeling of novel protein backbones (RFdiffusion)
 - [[Protein Language Models]] - Transformer models learning evolutionary patterns (ESM-2, ESM3)
 - [[Molecular Docking]] - Predicting ligand binding geometry and affinity
+
+### Protein Multifunctionality and Modularity
+**Core concept**: Proteins embody equidecomposability—same structural "pieces" rearranged for different functions.
+
+**Multifunctionality mechanisms**:
+- [[Moonlighting Proteins]] - Same polypeptide, multiple unrelated functions (crystallins, GAPDH, PGI)
+- [[Oligomeric State Switching]] - Assembly state determines function (monomer vs. tetramer)
+- [[Fold Switching]] - Same sequence, different conformations (α-helix ↔ β-sheet transitions)
+- [[Protein Promiscuity]] - Enzymes catalyzing multiple reactions (substrate/catalytic promiscuity)
+
+**Modularity and evolution**:
+- [[Protein Domain Shuffling]] - Domains as Lego blocks recombined into new architectures (exon shuffling)
+- [[Domain as Modular Unit]] - Independently folding units (~10,000 families) as evolutionary building blocks
+- [[Proteome Complexity from Domain Combinatorics]] - Limited domains (10⁴) → vast proteome (10⁶⁺) through combinations
+- [[Protein Equidecomposability]] - Explicit connection: domains are "pieces," shuffling is "dissection and rearrangement"
+
+**Evolutionary principles**:
+- [[Functional Degeneracy in Proteins]] - Inverse of moonlighting: multiple proteins, same function (isozymes, redundancy)
+- [[Evolutionary Tinkering]] - Jacob's bricolage: evolution works with available parts (opportunistic reuse)
+- [[Multifunctionality and Evolvability]] - Moonlighting and promiscuity as evolutionary capacitors (preadaptation)
 
 ### Foundation Models & Scale
 - [[Foundation Models in Biology]] - Large-scale pre-trained models across biological domains
@@ -418,4 +456,4 @@ See [[Genotype-to-Phenotype Hub]] for comprehensive overview.
 - [[Cephalization]] - Nervous system centralization, sensory organ concentration at anterior end
 
 ## Tags
-#hub #cellular-automata #dissection-theory #cachexia #hormesis #lattice-modeling #systems-biology #geometric-transformation #vitality #genotype-phenotype #multi-omics #knowledge-graphs #trajectories #selection #protein-design #structure-prediction #foundation-models #machine-learning #alphafold #esm #diffusion-models #open-weights #single-cell #variant-effect #state-space #transfer-functions #fitness-landscapes #renormalization #turing-patterns #critical-phenomena #phase-transitions #dynamical-systems #mathematical-foundations #phylogeny #tree-of-life #evolution #major-transitions #bacteria #archaea #eukarya #endosymbiosis #multicellularity #cooperation #immune-system #self-nonself #tolerance #autoimmunity #clonal-selection #affinity-maturation #memory #danger-theory #inflammation #checkpoints #trained-immunity #boundary #phenotypic-boundary #tumor-evasion #maternal-fetal-tolerance #microbiome #graph-rewriting #dynamic-topology #vertex-division #topology-behavior-coupling #organic-growth #self-organization #network-growth #morphogenesis-modeling #developmental-rules #tissue-architecture
+#hub #cellular-automata #dissection-theory #cachexia #hormesis #lattice-modeling #systems-biology #geometric-transformation #vitality #genotype-phenotype #multi-omics #knowledge-graphs #trajectories #selection #protein-design #structure-prediction #foundation-models #machine-learning #alphafold #esm #diffusion-models #open-weights #single-cell #variant-effect #state-space #transfer-functions #fitness-landscapes #renormalization #turing-patterns #critical-phenomena #phase-transitions #dynamical-systems #mathematical-foundations #phylogeny #tree-of-life #evolution #major-transitions #bacteria #archaea #eukarya #endosymbiosis #multicellularity #cooperation #immune-system #self-nonself #tolerance #autoimmunity #clonal-selection #affinity-maturation #memory #danger-theory #inflammation #checkpoints #trained-immunity #boundary #phenotypic-boundary #tumor-evasion #maternal-fetal-tolerance #microbiome #graph-rewriting #dynamic-topology #vertex-division #topology-behavior-coupling #organic-growth #self-organization #network-growth #morphogenesis-modeling #developmental-rules #tissue-architecture #proteins #moonlighting #domain-shuffling #modularity #equidecomposability #multifunctionality #promiscuity #oligomerization #fold-switching #protein-evolution #exon-shuffling #combinatorics #tinkering #preadaptation #neofunctionalization #degeneracy #evolvability
