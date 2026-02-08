@@ -11,6 +11,7 @@ This folder contains atomic Zettelkasten notes on computational biology, systems
 - [[Biological Dynamics Hub]] - Perturbation-response, trajectories, temporal patterns, phase transitions
 - [[Genotype-to-Phenotype Hub]] - Variant effects, context conditionality, fitness landscapes, degeneracy
 - [[Computational Biology Tools Hub]] - Structure prediction, foundation models, protein design, visualization
+- [[Immune System as Phenotypic Boundary Hub]] - Self-nonself discrimination, tolerance, memory, boundary enforcement
 
 ## Computational Frameworks
 
@@ -60,6 +61,32 @@ See [[Lattice and Spatial Modeling Hub]] for comprehensive overview.
 ### Frame-Dependent Interpretation
 - [[Figure-Ground Decomposition]] - Context-dependent foreground/background assignment
 - [[Analytical Frame]] - Interpretive perspectives (reductionist, systems, evolutionary, dynamical)
+
+## Immune System as Phenotypic Boundary
+See [[Immune System as Phenotypic Boundary Hub]] for comprehensive overview.
+
+### Boundary Definition and Recognition
+- [[Self-Nonself Discrimination]] - The fundamental recognition problem: distinguishing self from non-self
+- [[Immune Tolerance]] - Active maintenance of non-reactivity to self-antigens
+- [[Immunological Memory]] - Compressed representation of pathogen space via clonal expansion
+- [[Danger Theory]] - Matzinger's framework: immune system responds to danger, not just foreignness
+
+### Immune Computation
+- [[Clonal Selection Theory]] - Burnet's framework: Darwinian selection in real-time
+- [[Immune Repertoire as Compressed Model]] - BCR/TCR diversity as learned pathogen model
+- [[Affinity Maturation]] - Gradient descent on molecular fitness landscapes in germinal centers
+- [[Antigen Presentation]] - MHC display system with context-dependent costimulation
+
+### Boundary Failures and Negotiations
+- [[Autoimmunity]] - Boundary failure inward: self recognized as non-self
+- [[Tumor Immune Evasion]] - Boundary failure outward: non-self (cancer) escapes detection
+- [[Maternal-Fetal Tolerance]] - Paradox: tolerating genetically foreign fetus
+- [[Microbiome Negotiation]] - Commensal tolerance: beneficial non-self granted residence
+
+### System Dynamics
+- [[Inflammation as Phase Transition]] - Acute vs chronic inflammation as bistable states
+- [[Immune Checkpoints]] - CTLA-4, PD-1 as brakes preventing runaway activation
+- [[Trained Immunity]] - Innate memory via epigenetic reprogramming of myeloid cells
 
 ## Cachexia and Vitality
 
@@ -119,6 +146,12 @@ Computational Biology Tools Hub
 ├── Foundation models (proteins, single-cell)
 ├── Prediction-to-generation paradigm
 └── Visualization and open weights
+
+Immune System as Phenotypic Boundary Hub
+├── Self-nonself discrimination and tolerance
+├── Clonal selection and affinity maturation
+├── Boundary failures (autoimmunity, tumor evasion)
+└── System dynamics (inflammation, checkpoints, trained immunity)
 ```
 
 ### Lattice Modeling Family
@@ -207,6 +240,31 @@ Molecular Biology Visualization
 ├── 3D Structure (PyMOL, NGLview, ChimeraX)
 ├── Animated/Explanatory (Molecular Nodes, Manim)
 └── Single-Cell & Genomics (Scanpy, pyGenomeTracks)
+```
+
+### Immune System as Phenotypic Boundary Family
+```
+Self-Nonself Discrimination (root conceptual problem)
+├── Immune Tolerance (active suppression)
+│   ├── Autoimmunity (tolerance failure)
+│   └── Immune Checkpoints (peripheral tolerance brakes)
+├── Immunological Memory (learned boundary)
+│   └── Trained Immunity (innate counterpart)
+└── Danger Theory (context-dependent activation)
+
+Clonal Selection Theory (computational mechanism)
+├── Immune Repertoire as Compressed Model (diversity generation)
+├── Affinity Maturation (optimization)
+└── Antigen Presentation (context integration)
+
+Boundary Negotiations (tolerance of non-self)
+├── Maternal-Fetal Tolerance (allogeneic acceptance)
+├── Microbiome Negotiation (commensal tolerance)
+└── Tumor Immune Evasion (failure to attack altered-self)
+
+System Dynamics (temporal behavior)
+├── Inflammation as Phase Transition (bistable states)
+└── Immune Checkpoints (feedback control)
 ```
 
 ## Computational Methods & AI Biology Tools
@@ -317,4 +375,4 @@ See [[Genotype-to-Phenotype Hub]] for comprehensive overview.
 - [[Cephalization]] - Nervous system centralization, sensory organ concentration at anterior end
 
 ## Tags
-#hub #cellular-automata #dissection-theory #cachexia #hormesis #lattice-modeling #systems-biology #geometric-transformation #vitality #genotype-phenotype #multi-omics #knowledge-graphs #trajectories #selection #protein-design #structure-prediction #foundation-models #machine-learning #alphafold #esm #diffusion-models #open-weights #single-cell #variant-effect #state-space #transfer-functions #fitness-landscapes #renormalization #turing-patterns #critical-phenomena #phase-transitions #dynamical-systems #mathematical-foundations #phylogeny #tree-of-life #evolution #major-transitions #bacteria #archaea #eukarya #endosymbiosis #multicellularity #cooperation
+#hub #cellular-automata #dissection-theory #cachexia #hormesis #lattice-modeling #systems-biology #geometric-transformation #vitality #genotype-phenotype #multi-omics #knowledge-graphs #trajectories #selection #protein-design #structure-prediction #foundation-models #machine-learning #alphafold #esm #diffusion-models #open-weights #single-cell #variant-effect #state-space #transfer-functions #fitness-landscapes #renormalization #turing-patterns #critical-phenomena #phase-transitions #dynamical-systems #mathematical-foundations #phylogeny #tree-of-life #evolution #major-transitions #bacteria #archaea #eukarya #endosymbiosis #multicellularity #cooperation #immune-system #self-nonself #tolerance #autoimmunity #clonal-selection #affinity-maturation #memory #danger-theory #inflammation #checkpoints #trained-immunity #boundary #phenotypic-boundary #tumor-evasion #maternal-fetal-tolerance #microbiome
