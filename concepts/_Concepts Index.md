@@ -28,6 +28,29 @@ See [[Lattice and Spatial Modeling Hub]] for comprehensive overview.
 - [[Network Topology]] - Connection patterns determining signal propagation and dynamics
 - [[Symmetry Breaking in Lattice Systems]] - Pattern formation on uniform lattices
 
+### Graph Rewriting and Dynamic Topology
+Extension of cellular automata to evolving network structures.
+
+**Core Framework**:
+- [[Graph Rewriting Automata]] - CA extended to dynamic graphs; topology and states co-evolve
+- [[Dynamic Graph Topology]] - Network structure as dynamical variable
+- [[Vertex Division]] - Fundamental growth operation (vertex → complete subgraph)
+- [[Local Configuration Space]] - State × neighborhood determining dynamics
+- [[Rule Space and Numbering]] - Enumeration of possible rewriting rules
+
+**Emergent Behaviors**:
+- [[Organic Structure Emergence]] - Biological-looking morphologies from simple rules
+- [[Topology-Behavior Coupling]] - Feedback loop: structure constrains behavior, behavior generates structure
+- [[Chaotic vs Ordered Growth]] - Classification of growth dynamics (Classes I-IV)
+- [[Self-Organization in Graphs]] - Complex network structures without central coordination
+
+**Biological Applications**:
+- [[Cell Division as Vertex Division]] - Mitosis as graph rewriting operation
+- [[Morphogenesis as Graph Rewriting]] - Tissue development as iterative graph transformation
+- [[Developmental Rules]] - Local gene-regulatory logic producing global form
+- [[Tissue Topology]] - Tissues as cellular networks; function depends on connectivity
+- [[Growth Dynamics in Networks]] - Vascular/neural/bacterial network expansion
+
 ## Geometric Transformation
 
 ### Dissection Theory
@@ -162,6 +185,26 @@ Cellular Automata Framework (root)
 │   └── Renormalization in Biological Systems
 ├── Graph Cellular Automata
 └── Update Rule as Fundamental Unit
+```
+
+### Graph Rewriting and Dynamic Topology Family
+```
+Graph Rewriting Automata (root)
+├── Dynamic Graph Topology
+│   ├── Vertex Division
+│   └── Topology-Behavior Coupling
+├── Local Configuration Space
+│   └── Rule Space and Numbering
+├── Emergent Behaviors
+│   ├── Organic Structure Emergence
+│   ├── Self-Organization in Graphs
+│   └── Chaotic vs Ordered Growth
+└── Biological Applications
+    ├── Cell Division as Vertex Division
+    ├── Morphogenesis as Graph Rewriting
+    ├── Developmental Rules
+    ├── Tissue Topology
+    └── Growth Dynamics in Networks
 ```
 
 ### Dynamics and Pattern Formation Family
@@ -375,4 +418,4 @@ See [[Genotype-to-Phenotype Hub]] for comprehensive overview.
 - [[Cephalization]] - Nervous system centralization, sensory organ concentration at anterior end
 
 ## Tags
-#hub #cellular-automata #dissection-theory #cachexia #hormesis #lattice-modeling #systems-biology #geometric-transformation #vitality #genotype-phenotype #multi-omics #knowledge-graphs #trajectories #selection #protein-design #structure-prediction #foundation-models #machine-learning #alphafold #esm #diffusion-models #open-weights #single-cell #variant-effect #state-space #transfer-functions #fitness-landscapes #renormalization #turing-patterns #critical-phenomena #phase-transitions #dynamical-systems #mathematical-foundations #phylogeny #tree-of-life #evolution #major-transitions #bacteria #archaea #eukarya #endosymbiosis #multicellularity #cooperation #immune-system #self-nonself #tolerance #autoimmunity #clonal-selection #affinity-maturation #memory #danger-theory #inflammation #checkpoints #trained-immunity #boundary #phenotypic-boundary #tumor-evasion #maternal-fetal-tolerance #microbiome
+#hub #cellular-automata #dissection-theory #cachexia #hormesis #lattice-modeling #systems-biology #geometric-transformation #vitality #genotype-phenotype #multi-omics #knowledge-graphs #trajectories #selection #protein-design #structure-prediction #foundation-models #machine-learning #alphafold #esm #diffusion-models #open-weights #single-cell #variant-effect #state-space #transfer-functions #fitness-landscapes #renormalization #turing-patterns #critical-phenomena #phase-transitions #dynamical-systems #mathematical-foundations #phylogeny #tree-of-life #evolution #major-transitions #bacteria #archaea #eukarya #endosymbiosis #multicellularity #cooperation #immune-system #self-nonself #tolerance #autoimmunity #clonal-selection #affinity-maturation #memory #danger-theory #inflammation #checkpoints #trained-immunity #boundary #phenotypic-boundary #tumor-evasion #maternal-fetal-tolerance #microbiome #graph-rewriting #dynamic-topology #vertex-division #topology-behavior-coupling #organic-growth #self-organization #network-growth #morphogenesis-modeling #developmental-rules #tissue-architecture
