@@ -19,7 +19,7 @@ Failure of quality control → disease.
 #### Protein Quality Control
 - **Chaperones (HSP70, HSP90)**: Assist folding, prevent aggregation
 - **Proteasome**: Degrade misfolded/damaged proteins (ubiquitin tag)
-- **Autophagy**: Bulk degradation of protein aggregates (see [[Autophagy]])
+- **Autophagy**: Bulk degradation of protein aggregates (see [[Bioinformatics/concepts/Autophagy]])
 - **Unfolded Protein Response (UPR)**: ER stress response, upregulate chaperones or trigger apoptosis
 
 #### DNA Quality Control
@@ -99,7 +99,7 @@ Immune quality control targeting self:
 
 ### Enhance Quality Control
 - **Chaperone inducers**: Heat shock response activation
-- **Autophagy inducers**: Rapamycin, spermidine (see [[Autophagy]])
+- **Autophagy inducers**: Rapamycin, spermidine (see [[Bioinformatics/concepts/Autophagy]])
 - **Senolytic drugs**: Eliminate senescent cells (dasatinib + quercetin)
 
 ### Bypass Defective Quality Control
@@ -122,7 +122,7 @@ Without quality control, [[Dissection Quality Score]] declines even if conserved
 
 ## Related Concepts
 - [[Functional Capacity]] - Quality control preserves function
-- [[Autophagy]] - Cellular quality control mechanism
+- [[Bioinformatics/concepts/Autophagy]] - Cellular quality control mechanism
 - [[Selective Catabolism]] - Targeted removal of low-quality components
 - [[Dissection Quality Score]] - Quantifying quality
 - [[Robustness and Evolvability]] - Quality control enables robustness

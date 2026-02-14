@@ -54,7 +54,7 @@ Defining objective quality metrics for:
 - [[Equidecomposability]] - Transformation preserving quantity
 - [[Cachexia Inversion]] - Maximizing quality score
 - [[Functional Capacity]] - What quality measures
-- [[Hormesis]] - Mechanism for increasing quality score
+- [[Bioinformatics/concepts/Hormesis]] - Mechanism for increasing quality score
 
 ## Tags
 #quality-metric #functional-capacity #dissection #regeneration #optimization #systems-biology

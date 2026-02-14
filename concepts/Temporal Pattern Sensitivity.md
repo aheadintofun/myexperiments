@@ -50,7 +50,7 @@ The temporal pattern IS part of the information being transmitted. Two signals w
 - [[Cachexia Inversion]] - Pulsatile signaling drives adaptation
 - [[Perturbation-Response-Adaptation]] - Temporal dynamics of response
 - [[Cross-Boundary Signaling]] - Temporal patterns in signaling
-- [[Hormesis]] - Beneficial temporal patterns of stress
+- [[Bioinformatics/concepts/Hormesis]] - Beneficial temporal patterns of stress
 - [[Context Conditionality]] - Temporal context affects outcomes
 - [[Signal Processing in Biological Systems]] - Temporal decoding
 - [[Cellular Automata Framework]] - Update rules with temporal memory

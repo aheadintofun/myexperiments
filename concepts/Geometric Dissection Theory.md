@@ -70,7 +70,7 @@ If $D(P) \neq D(Q)$, then $P$ and $Q$ are **not equidecomposable** (even if volu
 
 ## Dissection as Computational Primitive
 View biological reorganization as sequence of dissection operations:
-1. **Cut**: Degrade tissue, catabolism (see [[Autophagy]], [[Selective Catabolism]])
+1. **Cut**: Degrade tissue, catabolism (see [[Bioinformatics/concepts/Autophagy]], [[Selective Catabolism]])
 2. **Move**: Transport components
 3. **Join**: Reassemble, anabolism
 

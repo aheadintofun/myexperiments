@@ -16,11 +16,11 @@ A knowledge base of atomic, interlinked concepts covering computational biology,
 
 Start here for thematic exploration:
 
-- **[Lattice and Spatial Modeling Hub](concepts/Lattice%20and%20Spatial%20Modeling%20Hub.md)** - Cellular automata, multi-scale lattices, spatial structure
-- **[Biological Dynamics Hub](concepts/Biological%20Dynamics%20Hub.md)** - Perturbation-response, trajectories, phase transitions
-- **[Genotype-to-Phenotype Hub](concepts/Genotype-to-Phenotype%20Hub.md)** - Variant effects, fitness landscapes, degeneracy
-- **[Computational Biology Tools Hub](concepts/Computational%20Biology%20Tools%20Hub.md)** - Structure prediction, foundation models, protein design
-- **[Tree of Life Hub](concepts/Tree%20of%20Life%20Hub.md)** - Major evolutionary transitions, abstract organizing principles
+- **[Lattice and Spatial Modeling Hub](Lattice%20and%20Spatial%20Modeling%20Hub.md)** - Cellular automata, multi-scale lattices, spatial structure
+- **[Biological Dynamics Hub](Biological%20Dynamics%20Hub.md)** - Perturbation-response, trajectories, phase transitions
+- **[Genotype-to-Phenotype Hub](Genotype-to-Phenotype%20Hub.md)** - Variant effects, fitness landscapes, degeneracy
+- **[Computational Biology Tools Hub](Computational%20Biology%20Tools%20Hub.md)** - Structure prediction, foundation models, protein design
+- **[Tree of Life Hub](Tree%20of%20Life%20Hub.md)** - Major evolutionary transitions, abstract organizing principles
 
 ## Topics Covered
 

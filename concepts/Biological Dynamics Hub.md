@@ -170,7 +170,7 @@ Example: Bacterial chemotaxis, homeostatic control.
 ## Hormesis and Beneficial Stress
 
 ### Controlled Perturbations
-**[[Hormesis]]** - Low-dose stress → beneficial adaptation. The dose-response curve is non-monotonic. Exercise, fasting, phytochemicals.
+**[[Bioinformatics/concepts/Hormesis]]** - Low-dose stress → beneficial adaptation. The dose-response curve is non-monotonic. Exercise, fasting, phytochemicals.
 
 ### Designed Interventions
 **[[Pharmacological Hormesis]]** - Intentional perturbations to enhance vitality. Intermittent fasting, cold exposure, mitochondrial uncouplers at low dose.
