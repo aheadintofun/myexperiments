@@ -1,0 +1,201 @@
+accession_id,geographic_group,flowering_time_days,rosette_leaf_number
+AT0001,Western Europe,31.4,13
+AT0002,Western Europe,32.8,13
+AT0003,Western Europe,47.2,19
+AT0004,Western Europe,43.3,16
+AT0005,Western Europe,34.0,14
+AT0006,Western Europe,36.7,15
+AT0007,Western Europe,40.3,14
+AT0008,Western Europe,40.9,17
+AT0009,Western Europe,34.6,13
+AT0010,Western Europe,37.3,13
+AT0011,Western Europe,37.8,15
+AT0012,Western Europe,35.2,15
+AT0013,Western Europe,37.2,16
+AT0014,Western Europe,40.7,15
+AT0015,Western Europe,39.4,16
+AT0016,Western Europe,34.9,15
+AT0017,Western Europe,39.3,16
+AT0018,Western Europe,37.9,16
+AT0019,Western Europe,35.9,15
+AT0020,Western Europe,38.3,17
+AT0021,Western Europe,33.3,14
+AT0022,Western Europe,39.5,16
+AT0023,Western Europe,42.5,19
+AT0024,Western Europe,39.9,16
+AT0025,Western Europe,34.8,14
+AT0026,Western Europe,38.8,14
+AT0027,Western Europe,45.7,14
+AT0028,Western Europe,43.5,16
+AT0029,Western Europe,34.3,13
+AT0030,Western Europe,36.0,13
+AT0031,Western Europe,38.6,14
+AT0032,Western Europe,41.6,15
+AT0033,Western Europe,40.6,18
+AT0034,Western Europe,35.3,13
+AT0035,Western Europe,35.5,14
+AT0036,Western Europe,41.4,15
+AT0037,Western Europe,38.8,15
+AT0038,Western Europe,41.2,16
+AT0039,Western Europe,39.4,14
+AT0040,Western Europe,32.0,10
+AT0041,Western Europe,33.6,13
+AT0042,Western Europe,37.2,14
+AT0043,Western Europe,39.5,16
+AT0044,Western Europe,35.1,15
+AT0045,Western Europe,36.6,14
+AT0046,Western Europe,42.4,16
+AT0047,Western Europe,34.3,12
+AT0048,Western Europe,31.1,14
+AT0049,Western Europe,35.7,10
+AT0050,Western Europe,36.6,13
+AT0051,Western Europe,41.6,18
+AT0052,Western Europe,33.5,15
+AT0053,Western Europe,41.5,18
+AT0054,Western Europe,41.7,16
+AT0055,Western Europe,32.4,11
+AT0056,Western Europe,43.5,15
+AT0057,Western Europe,37.8,16
+AT0058,Western Europe,42.8,15
+AT0059,Western Europe,35.9,13
+AT0060,Western Europe,41.5,18
+AT0061,Central Europe,39.1,15
+AT0062,Central Europe,41.0,14
+AT0063,Central Europe,37.6,11
+AT0064,Central Europe,31.8,12
+AT0065,Central Europe,34.4,14
+AT0066,Central Europe,37.6,17
+AT0067,Central Europe,41.8,15
+AT0068,Central Europe,38.8,14
+AT0069,Central Europe,33.6,13
+AT0070,Central Europe,39.9,17
+AT0071,Central Europe,33.6,12
+AT0072,Central Europe,38.8,17
+AT0073,Central Europe,34.7,13
+AT0074,Central Europe,37.3,13
+AT0075,Central Europe,39.6,13
+AT0076,Central Europe,49.0,18
+AT0077,Central Europe,40.5,18
+AT0078,Central Europe,42.6,17
+AT0079,Central Europe,40.2,15
+AT0080,Central Europe,33.4,12
+AT0081,Central Europe,34.7,16
+AT0082,Central Europe,43.2,18
+AT0083,Central Europe,39.8,14
+AT0084,Central Europe,31.3,12
+AT0085,Central Europe,38.7,13
+AT0086,Central Europe,43.3,15
+AT0087,Central Europe,43.6,17
+AT0088,Central Europe,29.9,11
+AT0089,Central Europe,37.0,15
+AT0090,Central Europe,42.1,15
+AT0091,Central Europe,43.3,17
+AT0092,Central Europe,38.4,17
+AT0093,Central Europe,41.7,17
+AT0094,Central Europe,36.4,10
+AT0095,Central Europe,43.3,15
+AT0096,Central Europe,37.4,17
+AT0097,Central Europe,33.7,13
+AT0098,Central Europe,31.5,10
+AT0099,Central Europe,41.4,19
+AT0100,Central Europe,35.8,10
+AT0101,Central Europe,38.4,14
+AT0102,Central Europe,38.5,14
+AT0103,Central Europe,42.1,19
+AT0104,Central Europe,37.8,12
+AT0105,Central Europe,32.7,15
+AT0106,Central Europe,42.9,16
+AT0107,Central Europe,41.1,14
+AT0108,Central Europe,46.7,20
+AT0109,Central Europe,43.3,15
+AT0110,Central Europe,37.0,16
+AT0111,Mediterranean,40.3,16
+AT0112,Mediterranean,39.6,17
+AT0113,Mediterranean,34.6,15
+AT0114,Mediterranean,30.9,12
+AT0115,Mediterranean,38.1,13
+AT0116,Mediterranean,36.6,15
+AT0117,Mediterranean,32.6,11
+AT0118,Mediterranean,25.1,9
+AT0119,Mediterranean,36.6,13
+AT0120,Mediterranean,38.9,17
+AT0121,Mediterranean,33.3,14
+AT0122,Mediterranean,35.9,15
+AT0123,Mediterranean,28.5,8
+AT0124,Mediterranean,26.8,7
+AT0125,Mediterranean,28.6,12
+AT0126,Mediterranean,35.1,13
+AT0127,Mediterranean,30.0,8
+AT0128,Mediterranean,37.5,15
+AT0129,Mediterranean,30.3,10
+AT0130,Mediterranean,41.2,15
+AT0131,Mediterranean,38.5,16
+AT0132,Mediterranean,29.1,10
+AT0133,Mediterranean,27.9,11
+AT0134,Mediterranean,35.2,13
+AT0135,Mediterranean,34.8,12
+AT0136,Mediterranean,34.2,11
+AT0137,Mediterranean,33.2,11
+AT0138,Mediterranean,25.7,11
+AT0139,Mediterranean,30.2,11
+AT0140,Mediterranean,40.0,18
+AT0141,Mediterranean,29.8,10
+AT0142,Mediterranean,35.6,17
+AT0143,Mediterranean,39.6,16
+AT0144,Mediterranean,35.1,14
+AT0145,Mediterranean,39.0,16
+AT0146,Mediterranean,38.6,14
+AT0147,Mediterranean,34.9,13
+AT0148,Mediterranean,32.7,11
+AT0149,Mediterranean,34.9,12
+AT0150,Mediterranean,31.7,11
+AT0151,Central Asia,40.8,17
+AT0152,Central Asia,38.5,14
+AT0153,Central Asia,41.3,16
+AT0154,Central Asia,37.6,14
+AT0155,Central Asia,47.3,17
+AT0156,Central Asia,41.5,16
+AT0157,Central Asia,50.6,21
+AT0158,Central Asia,33.6,13
+AT0159,Central Asia,41.5,18
+AT0160,Central Asia,41.1,14
+AT0161,Central Asia,34.7,15
+AT0162,Central Asia,40.9,16
+AT0163,Central Asia,39.5,15
+AT0164,Central Asia,36.6,15
+AT0165,Central Asia,45.1,17
+AT0166,Central Asia,42.5,14
+AT0167,Central Asia,42.0,15
+AT0168,Central Asia,37.3,17
+AT0169,Central Asia,46.0,19
+AT0170,Central Asia,37.6,15
+AT0171,Central Asia,45.3,19
+AT0172,Central Asia,31.3,13
+AT0173,Central Asia,42.3,15
+AT0174,Central Asia,37.5,13
+AT0175,Central Asia,42.2,18
+AT0176,Central Asia,36.8,13
+AT0177,Central Asia,37.4,16
+AT0178,Central Asia,33.5,12
+AT0179,Central Asia,38.7,14
+AT0180,Central Asia,37.2,13
+AT0181,North America,31.6,12
+AT0182,North America,34.1,16
+AT0183,North America,34.6,13
+AT0184,North America,36.0,17
+AT0185,North America,31.0,11
+AT0186,North America,37.6,15
+AT0187,North America,37.5,16
+AT0188,North America,29.9,10
+AT0189,North America,31.8,11
+AT0190,North America,35.3,13
+AT0191,North America,30.1,13
+AT0192,North America,33.5,11
+AT0193,North America,40.2,15
+AT0194,North America,37.2,16
+AT0195,North America,35.6,13
+AT0196,North America,32.3,9
+AT0197,North America,42.8,16
+AT0198,North America,41.0,15
+AT0199,North America,36.9,14
+AT0200,North America,33.6,16

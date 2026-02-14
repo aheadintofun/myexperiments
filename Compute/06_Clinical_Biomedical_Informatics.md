@@ -14,7 +14,11 @@ This notebook builds:
 7. Biomarker discovery from clinical data
 8. Simulated clinical trial analysis
 
-Estimated runtime: ~3 minutes (all synthetic data, no downloads)
+**Data sources**: German Breast Cancer Study Group dataset (`lifelines.datasets.load_gbsg2()`) — 686 real breast cancer patients with hormonal therapy, tumor grading, and recurrence-free survival data. Waterfall plot uses simulated tumor responses (real RECIST data not publicly available).
+
+**Data setup**: No downloads required — `lifelines` includes the GBSG2 dataset. Install lifelines: `pip install lifelines`.
+
+Estimated runtime: ~3 minutes
 
 **Key learning outcomes:**
 1. Understand clinical data as trajectories through state space -- see [[Trajectory in State Space]]

@@ -1,0 +1,16 @@
+species,common_name,genome_size_mb,ploidy,gene_count,te_percent,chromosome_n,category
+Arabidopsis thaliana,Arabidopsis,135,2,27416,14,5,Model plant
+Oryza sativa,Rice,430,2,37544,35,12,Cereal
+Zea mays,Maize,2300,2,39591,85,10,Cereal
+Glycine max,Soybean,1100,4,46430,57,20,Legume
+Triticum aestivum,Wheat,17000,6,107891,80,21,Cereal
+Hordeum vulgare,Barley,5100,2,39734,76,7,Cereal
+Solanum tuberosum,Potato,840,4,39031,62,12,Tuber
+Solanum lycopersicum,Tomato,950,2,34727,63,12,Fruit
+Gossypium hirsutum,Cotton,2500,4,66434,67,13,Fiber
+Brassica napus,Canola,1130,4,101040,55,19,Oilseed
+Sorghum bicolor,Sorghum,730,2,34211,62,10,Cereal
+Manihot esculenta,Cassava,772,2,33033,50,18,Root
+Vitis vinifera,Grape,487,2,29971,41,19,Fruit
+Malus domestica,Apple,742,2,42140,42,17,Fruit
+Musa acuminata,Banana,523,3,36542,44,11,Fruit

@@ -14,7 +14,11 @@ This notebook builds:
 7. Gene set enrichment analysis (GSEA) concepts
 8. Pathway visualization
 
-Estimated runtime: ~3 minutes (synthetic data, no downloads)
+**Data sources**: Airway smooth muscle RNA-seq dataset (Himes et al. 2014, GSE52778-derived). 20,000 genes x 8 samples (4 control + 4 dexamethasone-treated). Known dex-responsive genes include FKBP5, TSC22D3, DUSP1 (upregulated) and IL8, IL6, CCL2 (downregulated).
+
+**Data setup**: Run `python data/download_all_data.py` from the `Compute/` directory before executing.
+
+Estimated runtime: ~3 minutes
 
 **Key learning outcomes:**
 1. Understand why RNA-seq counts are negative-binomial, not Poisson -- see [[Signal Processing in Biological Systems]]

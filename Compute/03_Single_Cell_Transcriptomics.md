@@ -13,7 +13,11 @@ This notebook builds:
 6. Differential expression and marker gene identification
 7. Cell type annotation
 
-Estimated runtime: ~3 minutes (synthetic data, no downloads)
+**Data sources**: Real 10x Genomics PBMC 3k dataset (`scanpy.datasets.pbmc3k()`) — 2,700 peripheral blood mononuclear cells from a healthy donor. Real cell type markers: CD3D (T cells), MS4A1 (B cells), CD14 (monocytes), NKG7 (NK cells), FCER1A (dendritic cells).
+
+**Data setup**: The PBMC3k dataset auto-downloads on first run (~6 MB). For pre-caching, run `python data/download_all_data.py` from `Compute/`.
+
+Estimated runtime: ~3 minutes
 
 **Key learning outcomes:**
 1. Understand single-cell RNA-seq as individual cell measurements (not tissue averages)

@@ -12,7 +12,11 @@ This notebook builds hands-on fluency with:
 - GC content, codon usage, and sequence statistics
 - Restriction enzyme analysis and ORF finding
 
-**Estimated runtime**: ~5 minutes on a laptop (all local, no internet needed for core examples)
+**Data sources**: Real biological sequences from NCBI (BRCA1 mRNA, E. coli K12 genome, pUC19 vector), UniProt (hemoglobin alpha/beta), and the reviewed human proteome.
+
+**Data setup**: Run `python data/download_all_data.py` from the Compute/ directory before first use.
+
+**Estimated runtime**: ~5 minutes on a laptop
 
 ---
 

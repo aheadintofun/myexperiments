@@ -13,7 +13,11 @@ This notebook builds:
 6. Molecular fingerprints and chemical similarity
 7. Virtual screening concepts
 
-Estimated runtime: ~5 minutes (all local computation)
+**Data sources**: Real PDB crystal structures — crambin (1CRN, 46 residues) and myoglobin (1MBO, 153 residues). FDA-approved drug library (49 drugs with SMILES). Real Ramachandran angles computed from myoglobin backbone atoms. RDKit cheminformatics for molecular property calculation.
+
+**Data setup**: Run `python data/download_all_data.py` from the `Compute/` directory before executing. Downloads PDB files from RCSB and curated drug data.
+
+Estimated runtime: ~5 minutes
 
 **Key learning outcomes:**
 1. Understand the hierarchy of protein structure
@@ -30,38 +34,21 @@ We use **BioPandas** for protein structure analysis and **RDKit** for cheminform
 BioPandas makes PDB files as easy to work with as DataFrames. RDKit is the foundational
 cheminformatics toolkit (like Biopython for sequences, but for small molecules).
 
-Note: If RDKit is not installed, the drug discovery sections use numpy-based alternatives.
-
 ```python
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from scipy.spatial.distance import pdist, squareform
+from biopandas.pdb import PandasPdb
+from rdkit import Chem
+from rdkit.Chem import Draw, Descriptors, AllChem, DataStructs
+from rdkit import RDLogger
+RDLogger.DisableLog('rdApp.*')
 import warnings
 warnings.filterwarnings('ignore')
 
-# Try importing optional libraries
-try:
-    from biopandas.pdb import PandasPdb
-    HAS_BIOPANDAS = True
-    print("BioPandas available")
-except ImportError:
-    HAS_BIOPANDAS = False
-    print("BioPandas not installed — using built-in PDB parser")
-
-try:
-    from rdkit import Chem
-    from rdkit.Chem import Draw, Descriptors, AllChem, DataStructs
-    from rdkit import RDLogger
-    RDLogger.DisableLog('rdApp.*')
-    HAS_RDKIT = True
-    print("RDKit available")
-except ImportError:
-    HAS_RDKIT = False
-    print("RDKit not installed — using simplified drug-likeness calculations")
-
-print("Core libraries: numpy, scipy, matplotlib — ready")
+print("BioPandas, RDKit, numpy, scipy, matplotlib — ready")
 ```
 
 ---
@@ -282,102 +269,87 @@ drugs = {
     'Paclitaxel': 'CC1=C2C(C(=O)C3(C(CC4C(C3C(C(C2(C)C(CC1OC(=O)C(C(c5ccccc5)NC(=O)c6ccccc6)O)O)OC(=O)C7CCCCC7)(CO4)OC(=O)C)OC(=O)C)O)C)OC(=O)C',
 }
 
-if HAS_RDKIT:
-    print(f"{'Drug':<16} {'MW':>6} {'LogP':>6} {'HBD':>5} {'HBA':>5} {'Pass?':>7}")
-    print("-" * 50)
+print(f"{'Drug':<16} {'MW':>6} {'LogP':>6} {'HBD':>5} {'HBA':>5} {'Pass?':>7}")
+print("-" * 50)
 
-    results = []
-    for name, smiles in drugs.items():
-        mol = Chem.MolFromSmiles(smiles)
-        if mol:
-            mw = Descriptors.MolWt(mol)
-            logp = Descriptors.MolLogP(mol)
-            hbd = Descriptors.NumHDonors(mol)
-            hba = Descriptors.NumHAcceptors(mol)
-            passes = mw <= 500 and logp <= 5 and hbd <= 5 and hba <= 10
-            results.append({'name': name, 'MW': mw, 'LogP': logp, 'HBD': hbd, 'HBA': hba, 'pass': passes})
-            print(f"{name:<16} {mw:>6.1f} {logp:>6.2f} {hbd:>5} {hba:>5} {'YES' if passes else 'NO':>7}")
-else:
-    # Approximate properties from SMILES string analysis
-    print("Using simplified Lipinski analysis (no RDKit)")
-    print(f"{'Drug':<16} {'SMILES length':>14} {'Est. MW':>8}")
-    print("-" * 42)
-    for name, smiles in drugs.items():
-        est_mw = len(smiles) * 8  # Very rough approximation
-        print(f"{name:<16} {len(smiles):>14} {est_mw:>8}")
+results = []
+for name, smiles in drugs.items():
+    mol = Chem.MolFromSmiles(smiles)
+    if mol:
+        mw = Descriptors.MolWt(mol)
+        logp = Descriptors.MolLogP(mol)
+        hbd = Descriptors.NumHDonors(mol)
+        hba = Descriptors.NumHAcceptors(mol)
+        passes = mw <= 500 and logp <= 5 and hbd <= 5 and hba <= 10
+        results.append({'name': name, 'MW': mw, 'LogP': logp, 'HBD': hbd, 'HBA': hba, 'pass': passes})
+        print(f"{name:<16} {mw:>6.1f} {logp:>6.2f} {hbd:>5} {hba:>5} {'YES' if passes else 'NO':>7}")
 ```
 
 ```python
-if HAS_RDKIT:
-    fig, axes = plt.subplots(2, 2, figsize=(12, 10))
+fig, axes = plt.subplots(2, 2, figsize=(12, 10))
 
-    names = [r['name'] for r in results]
-    colors_lip = ['#2ecc71' if r['pass'] else '#e74c3c' for r in results]
+names = [r['name'] for r in results]
+colors_lip = ['#2ecc71' if r['pass'] else '#e74c3c' for r in results]
 
-    # MW
-    axes[0,0].barh(names, [r['MW'] for r in results], color=colors_lip)
-    axes[0,0].axvline(500, color='red', linestyle='--', label='Limit: 500')
-    axes[0,0].set_xlabel('Molecular Weight (Da)')
-    axes[0,0].set_title('Molecular Weight')
-    axes[0,0].legend()
+# MW
+axes[0,0].barh(names, [r['MW'] for r in results], color=colors_lip)
+axes[0,0].axvline(500, color='red', linestyle='--', label='Limit: 500')
+axes[0,0].set_xlabel('Molecular Weight (Da)')
+axes[0,0].set_title('Molecular Weight')
+axes[0,0].legend()
 
-    # LogP
-    axes[0,1].barh(names, [r['LogP'] for r in results], color=colors_lip)
-    axes[0,1].axvline(5, color='red', linestyle='--', label='Limit: 5')
-    axes[0,1].set_xlabel('LogP')
-    axes[0,1].set_title('Lipophilicity (LogP)')
-    axes[0,1].legend()
+# LogP
+axes[0,1].barh(names, [r['LogP'] for r in results], color=colors_lip)
+axes[0,1].axvline(5, color='red', linestyle='--', label='Limit: 5')
+axes[0,1].set_xlabel('LogP')
+axes[0,1].set_title('Lipophilicity (LogP)')
+axes[0,1].legend()
 
-    # HBD
-    axes[1,0].barh(names, [r['HBD'] for r in results], color=colors_lip)
-    axes[1,0].axvline(5, color='red', linestyle='--', label='Limit: 5')
-    axes[1,0].set_xlabel('H-bond Donors')
-    axes[1,0].set_title('H-bond Donors')
-    axes[1,0].legend()
+# HBD
+axes[1,0].barh(names, [r['HBD'] for r in results], color=colors_lip)
+axes[1,0].axvline(5, color='red', linestyle='--', label='Limit: 5')
+axes[1,0].set_xlabel('H-bond Donors')
+axes[1,0].set_title('H-bond Donors')
+axes[1,0].legend()
 
-    # HBA
-    axes[1,1].barh(names, [r['HBA'] for r in results], color=colors_lip)
-    axes[1,1].axvline(10, color='red', linestyle='--', label='Limit: 10')
-    axes[1,1].set_xlabel('H-bond Acceptors')
-    axes[1,1].set_title('H-bond Acceptors')
-    axes[1,1].legend()
+# HBA
+axes[1,1].barh(names, [r['HBA'] for r in results], color=colors_lip)
+axes[1,1].axvline(10, color='red', linestyle='--', label='Limit: 10')
+axes[1,1].set_xlabel('H-bond Acceptors')
+axes[1,1].set_title('H-bond Acceptors')
+axes[1,1].legend()
 
-    plt.suptitle("Lipinski's Rule of Five Analysis\n(Green = passes, Red = violates)", fontsize=14)
-    plt.tight_layout()
-    plt.show()
-else:
-    print("Skipping visualization (RDKit not available)")
+plt.suptitle("Lipinski's Rule of Five Analysis\n(Green = passes, Red = violates)", fontsize=14)
+plt.tight_layout()
+plt.show()
 ```
 
 ```python
-if HAS_RDKIT:
-    fig, ax = plt.subplots(figsize=(10, 8))
+fig, ax = plt.subplots(figsize=(10, 8))
 
-    for r in results:
-        color = '#2ecc71' if r['pass'] else '#e74c3c'
-        ax.scatter(r['MW'], r['LogP'], s=200, c=color, edgecolors='black',
-                  linewidth=1, zorder=5)
-        ax.annotate(r['name'], (r['MW'], r['LogP']), fontsize=9,
-                   xytext=(5, 5), textcoords='offset points')
+for r in results:
+    color = '#2ecc71' if r['pass'] else '#e74c3c'
+    ax.scatter(r['MW'], r['LogP'], s=200, c=color, edgecolors='black',
+              linewidth=1, zorder=5)
+    ax.annotate(r['name'], (r['MW'], r['LogP']), fontsize=9,
+               xytext=(5, 5), textcoords='offset points')
 
-    # Draw Lipinski boundaries
-    ax.axvline(500, color='red', linestyle='--', alpha=0.5, label='MW limit')
-    ax.axhline(5, color='blue', linestyle='--', alpha=0.5, label='LogP limit')
+# Draw Lipinski boundaries
+ax.axvline(500, color='red', linestyle='--', alpha=0.5, label='MW limit')
+ax.axhline(5, color='blue', linestyle='--', alpha=0.5, label='LogP limit')
 
-    # Shade the "drug-like" region
-    ax.fill_between([0, 500], [-2, -2], [5, 5], alpha=0.1, color='green', label='Drug-like space')
+# Shade the "drug-like" region
+ax.fill_between([0, 500], [-2, -2], [5, 5], alpha=0.1, color='green', label='Drug-like space')
 
-    ax.set_xlabel('Molecular Weight (Da)')
-    ax.set_ylabel('LogP (Lipophilicity)')
-    ax.set_title('Drug-Likeness Space\n(Lower-left quadrant = oral drug candidates)')
-    ax.legend()
-    ax.grid(True, alpha=0.3)
-    ax.set_xlim(0, 900)
-    ax.set_ylim(-2, 8)
-    plt.tight_layout()
-    plt.show()
-else:
-    print("Skipping (RDKit not available)")
+ax.set_xlabel('Molecular Weight (Da)')
+ax.set_ylabel('LogP (Lipophilicity)')
+ax.set_title('Drug-Likeness Space\n(Lower-left quadrant = oral drug candidates)')
+ax.legend()
+ax.grid(True, alpha=0.3)
+ax.set_xlim(0, 900)
+ax.set_ylim(-2, 8)
+plt.tight_layout()
+plt.show()
 ```
 
 ---
@@ -396,114 +368,98 @@ See [[Functional Equivalence Classes]] -- structurally similar molecules may hav
 similar function.
 
 ```python
-if HAS_RDKIT:
-    # Compute Morgan fingerprints (circular, radius 2)
-    fps = {}
-    for name, smiles in drugs.items():
-        mol = Chem.MolFromSmiles(smiles)
-        if mol:
-            fp = AllChem.GetMorganFingerprintAsBitVect(mol, 2, nBits=2048)
-            fps[name] = fp
-
-    print(f"Morgan fingerprints computed for {len(fps)} molecules")
-    print(f"Fingerprint length: 2048 bits")
-
-    # Show bit density
-    for name, fp in fps.items():
-        bits_on = fp.GetNumOnBits()
-        print(f"  {name}: {bits_on} bits on ({bits_on/2048:.1%})")
-else:
-    # Simplified fingerprint using SMILES character counts
-    print("Using simplified SMILES-based fingerprints (no RDKit)")
-    fps = {}
-    for name, smiles in drugs.items():
-        fp = np.zeros(128)
-        for i, c in enumerate(smiles[:128]):
-            fp[i] = ord(c) / 127
+# Compute Morgan fingerprints (circular, radius 2)
+fps = {}
+for name, smiles in drugs.items():
+    mol = Chem.MolFromSmiles(smiles)
+    if mol:
+        fp = AllChem.GetMorganFingerprintAsBitVect(mol, 2, nBits=2048)
         fps[name] = fp
+
+print(f"Morgan fingerprints computed for {len(fps)} molecules")
+print(f"Fingerprint length: 2048 bits")
+
+# Show bit density
+for name, fp in fps.items():
+    bits_on = fp.GetNumOnBits()
+    print(f"  {name}: {bits_on} bits on ({bits_on/2048:.1%})")
 ```
 
 ```python
-if HAS_RDKIT:
-    # Compute pairwise Tanimoto similarity
-    drug_names = list(fps.keys())
-    n = len(drug_names)
-    sim_matrix = np.zeros((n, n))
+# Compute pairwise Tanimoto similarity
+drug_names = list(fps.keys())
+n = len(drug_names)
+sim_matrix = np.zeros((n, n))
 
-    for i in range(n):
-        for j in range(n):
-            sim_matrix[i, j] = DataStructs.TanimotoSimilarity(fps[drug_names[i]], fps[drug_names[j]])
+for i in range(n):
+    for j in range(n):
+        sim_matrix[i, j] = DataStructs.TanimotoSimilarity(fps[drug_names[i]], fps[drug_names[j]])
 
-    plt.figure(figsize=(9, 8))
-    plt.imshow(sim_matrix, cmap='YlOrRd', vmin=0, vmax=1)
-    plt.colorbar(label='Tanimoto Similarity')
-    plt.xticks(range(n), drug_names, rotation=45, ha='right')
-    plt.yticks(range(n), drug_names)
-    plt.title('Drug Similarity Matrix (Morgan Fingerprints)')
+plt.figure(figsize=(9, 8))
+plt.imshow(sim_matrix, cmap='YlOrRd', vmin=0, vmax=1)
+plt.colorbar(label='Tanimoto Similarity')
+plt.xticks(range(n), drug_names, rotation=45, ha='right')
+plt.yticks(range(n), drug_names)
+plt.title('Drug Similarity Matrix (Morgan Fingerprints)')
 
-    for i in range(n):
-        for j in range(n):
-            plt.text(j, i, f'{sim_matrix[i,j]:.2f}', ha='center', va='center', fontsize=8)
+for i in range(n):
+    for j in range(n):
+        plt.text(j, i, f'{sim_matrix[i,j]:.2f}', ha='center', va='center', fontsize=8)
 
-    plt.tight_layout()
-    plt.show()
+plt.tight_layout()
+plt.show()
 
-    # Most similar pair (excluding self)
-    np.fill_diagonal(sim_matrix, 0)
-    max_idx = np.unravel_index(sim_matrix.argmax(), sim_matrix.shape)
-    print(f"Most similar pair: {drug_names[max_idx[0]]} & {drug_names[max_idx[1]]} (T = {sim_matrix[max_idx]:.3f})")
-else:
-    print("Skipping similarity matrix (RDKit not available)")
+# Most similar pair (excluding self)
+np.fill_diagonal(sim_matrix, 0)
+max_idx = np.unravel_index(sim_matrix.argmax(), sim_matrix.shape)
+print(f"Most similar pair: {drug_names[max_idx[0]]} & {drug_names[max_idx[1]]} (T = {sim_matrix[max_idx]:.3f})")
 ```
 
 ```python
-if HAS_RDKIT:
-    # Generate a larger set of molecules for chemical space visualization
-    from rdkit.Chem import rdMolDescriptors
+# Generate a larger set of molecules for chemical space visualization
+from rdkit.Chem import rdMolDescriptors
 
-    # Use the drugs we have + additional common drugs
-    all_smiles = {
-        'Aspirin': 'CC(=O)Oc1ccccc1C(=O)O',
-        'Ibuprofen': 'CC(C)Cc1ccc(cc1)C(C)C(=O)O',
-        'Caffeine': 'Cn1c(=O)c2c(ncn2C)n(C)c1=O',
-        'Metformin': 'CN(C)C(=N)NC(=N)N',
-        'Acetaminophen': 'CC(=O)Nc1ccc(O)cc1',
-        'Naproxen': 'COc1ccc2cc(CC(C)C(=O)O)ccc2c1',
-        'Diazepam': 'CN1C(=O)CN=C(c2ccccc2)c3cc(Cl)ccc13',
-        'Omeprazole': 'COc1ccc2[nH]c(S(=O)Cc3ncc(C)c(OC)c3C)nc2c1',
-    }
+# Use the drugs we have + additional common drugs
+all_smiles = {
+    'Aspirin': 'CC(=O)Oc1ccccc1C(=O)O',
+    'Ibuprofen': 'CC(C)Cc1ccc(cc1)C(C)C(=O)O',
+    'Caffeine': 'Cn1c(=O)c2c(ncn2C)n(C)c1=O',
+    'Metformin': 'CN(C)C(=N)NC(=N)N',
+    'Acetaminophen': 'CC(=O)Nc1ccc(O)cc1',
+    'Naproxen': 'COc1ccc2cc(CC(C)C(=O)O)ccc2c1',
+    'Diazepam': 'CN1C(=O)CN=C(c2ccccc2)c3cc(Cl)ccc13',
+    'Omeprazole': 'COc1ccc2[nH]c(S(=O)Cc3ncc(C)c(OC)c3C)nc2c1',
+}
 
-    fp_array = []
-    names_all = []
-    for name, smiles in all_smiles.items():
-        mol = Chem.MolFromSmiles(smiles)
-        if mol:
-            fp = AllChem.GetMorganFingerprintAsBitVect(mol, 2, nBits=2048)
-            arr = np.zeros(2048)
-            DataStructs.ConvertToNumpyArray(fp, arr)
-            fp_array.append(arr)
-            names_all.append(name)
+fp_array = []
+names_all = []
+for name, smiles in all_smiles.items():
+    mol = Chem.MolFromSmiles(smiles)
+    if mol:
+        fp = AllChem.GetMorganFingerprintAsBitVect(mol, 2, nBits=2048)
+        arr = np.zeros(2048)
+        DataStructs.ConvertToNumpyArray(fp, arr)
+        fp_array.append(arr)
+        names_all.append(name)
 
-    fp_matrix = np.array(fp_array)
+fp_matrix = np.array(fp_array)
 
-    # Use PCA (t-SNE needs more points to be meaningful)
-    from sklearn.decomposition import PCA
-    pca = PCA(n_components=2)
-    coords_2d = pca.fit_transform(fp_matrix)
+# Use PCA (t-SNE needs more points to be meaningful)
+from sklearn.decomposition import PCA
+pca = PCA(n_components=2)
+coords_2d = pca.fit_transform(fp_matrix)
 
-    plt.figure(figsize=(10, 8))
-    plt.scatter(coords_2d[:, 0], coords_2d[:, 1], s=200, c='steelblue', edgecolors='black')
-    for i, name in enumerate(names_all):
-        plt.annotate(name, (coords_2d[i, 0], coords_2d[i, 1]), fontsize=9,
-                    xytext=(8, 8), textcoords='offset points')
-    plt.xlabel(f'PC1 ({pca.explained_variance_ratio_[0]:.1%} variance)')
-    plt.ylabel(f'PC2 ({pca.explained_variance_ratio_[1]:.1%} variance)')
-    plt.title('Chemical Space (PCA of Morgan Fingerprints)')
-    plt.grid(True, alpha=0.3)
-    plt.tight_layout()
-    plt.show()
-else:
-    print("Skipping chemical space visualization (RDKit not available)")
+plt.figure(figsize=(10, 8))
+plt.scatter(coords_2d[:, 0], coords_2d[:, 1], s=200, c='steelblue', edgecolors='black')
+for i, name in enumerate(names_all):
+    plt.annotate(name, (coords_2d[i, 0], coords_2d[i, 1]), fontsize=9,
+                xytext=(8, 8), textcoords='offset points')
+plt.xlabel(f'PC1 ({pca.explained_variance_ratio_[0]:.1%} variance)')
+plt.ylabel(f'PC2 ({pca.explained_variance_ratio_[1]:.1%} variance)')
+plt.title('Chemical Space (PCA of Morgan Fingerprints)')
+plt.grid(True, alpha=0.3)
+plt.tight_layout()
+plt.show()
 ```
 
 ---

@@ -14,9 +14,11 @@ This notebook builds:
 7. Simulated whole-slide image analysis pipeline
 8. ROI (Region of Interest) analysis
 
-All images are **synthetically generated** with numpy -- no external image files needed.
+**Data sources**: Real immunohistochemistry (IHC) colon tissue image (`skimage.data.ihc()`), real human mitosis image (`skimage.data.human_mitosis()`) for cell counting and watershed segmentation. Synthetic CT images for Hounsfield Unit windowing concepts (real CT requires pydicom). Synthetic WSI for tumor/normal tiling narrative (real WSIs are gigapixels).
 
-Estimated runtime: ~3 minutes on a laptop (all local computation)
+**Data setup**: No downloads required — `scikit-image` includes built-in sample images. Install: `pip install scikit-image`.
+
+Estimated runtime: ~3 minutes on a laptop
 
 **Key learning outcomes:**
 1. Understand H&E staining and digital pathology workflows

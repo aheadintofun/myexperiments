@@ -14,7 +14,11 @@ This notebook builds:
 7. Environmental x Genotype interaction (GxE)
 8. Crop diversity and conservation genetics
 
-Estimated runtime: ~3 minutes (all synthetic data, no downloads)
+**Data sources**: Curated crop genome statistics (15 species with genome sizes, ploidy, TE content). Arabidopsis 1001 Genomes-derived SNP data (200 accessions x 1000 SNPs across 5 chromosomes) with flowering time phenotypes. GxE interaction and diversity timeline kept as simulations (real multi-environment trial data not freely available).
+
+**Data setup**: Run `python data/download_all_data.py` from the `Compute/` directory before executing.
+
+Estimated runtime: ~3 minutes
 
 **Key learning outcomes:**
 1. Understand how plant genomes differ from animal genomes -- see [[Plant-Animal Divergence]]

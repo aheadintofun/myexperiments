@@ -12,6 +12,10 @@ This notebook builds:
 5. Genome-wide association study (GWAS) simulation
 6. Manhattan and QQ plots
 
+**Data sources**: Real 1000 Genomes Project-derived chr22 genotypes (100 individuals x 500 SNPs) with AFR/EUR/EAS population labels. GWAS section uses real genotypes with a simulated phenotype (standard teaching approach for demonstrating statistical power).
+
+**Data setup**: Run `python data/download_all_data.py` from the `Compute/` directory before executing.
+
 Estimated runtime: ~5 min on laptop
 
 **Key learning outcomes:**
