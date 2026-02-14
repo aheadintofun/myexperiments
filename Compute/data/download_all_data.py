@@ -612,6 +612,23 @@ def download_nb08():
 
 
 # ---------------------------------------------------------------------------
+# NB07: Biomedical Image Analysis
+# ---------------------------------------------------------------------------
+def download_nb07():
+    print("\n=== NB07: Biomedical Image Analysis ===")
+    d = os.path.join(DATA_DIR, "nb07")
+    os.makedirs(d, exist_ok=True)
+
+    # CMU-1-Small-Region.svs - real Aperio whole-slide image from OpenSlide test data
+    download_file(
+        "https://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/CMU-1-Small-Region.svs",
+        os.path.join(d, "CMU-1-Small-Region.svs"),
+        "Aperio WSI (CMU-1-Small-Region, ~2 MB)"
+    )
+    print("  Also uses skimage.data.immunohistochemistry(), human_mitosis(), brain() (built-in)")
+
+
+# ---------------------------------------------------------------------------
 # Pre-cache scanpy PBMC3k for NB03
 # ---------------------------------------------------------------------------
 def precache_pbmc3k():
@@ -648,9 +665,8 @@ def main():
     # NB06: lifelines.datasets built-in (no download needed)
     print("\n=== NB06: Clinical Informatics ===")
     print("  [skip] Uses lifelines.datasets.load_gbsg2() (built-in)")
-    # NB07: skimage.data built-in (no download needed)
-    print("\n=== NB07: Biomedical Image Analysis ===")
-    print("  [skip] Uses skimage.data.ihc() and skimage.data.human_mitosis() (built-in)")
+    # NB07: Biomedical Image Analysis (WSI file + skimage built-ins)
+    download_nb07()
     download_nb08()
 
     print("\n" + "=" * 60)
