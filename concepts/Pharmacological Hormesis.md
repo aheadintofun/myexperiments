@@ -54,7 +54,7 @@ This would require:
 - Individual variation (hormetic response varies by genetic/epigenetic context)
 
 ## Related Concepts
-- [[Bioinformatics/concepts/Hormesis]] - Underlying biological principle
+- [[Bioinformatics/Concepts/Hormesis]] - Underlying biological principle
 - [[Cachexia Inversion]] - Therapeutic goal
 - [[Temporal Pattern Sensitivity]] - Pattern engineering requirement
 - [[Selective Catabolism]] - Mechanism of action

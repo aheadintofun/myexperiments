@@ -12,7 +12,7 @@ A biphasic [[Dose-Response Relationship|dose-response]] phenomenon where low dos
 
 ### Caloric Restriction / Fasting
 - Acute stress: Nutrient deprivation
-- Response: [[Bioinformatics/concepts/Autophagy]], stress resistance pathways, metabolic flexibility
+- Response: [[Bioinformatics/Concepts/Autophagy]], stress resistance pathways, metabolic flexibility
 - Chronic benefit: Extended healthspan, improved insulin sensitivity
 
 ### Heat/Cold Exposure

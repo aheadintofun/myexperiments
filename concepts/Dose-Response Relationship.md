@@ -32,7 +32,7 @@ where:
 ## Non-Monotonic Dose-Response
 
 ### Hormesis
-See [[Bioinformatics/concepts/Hormesis]]: **Beneficial effect at low dose, harmful at high dose**.
+See [[Bioinformatics/Concepts/Hormesis]]: **Beneficial effect at low dose, harmful at high dose**.
 
 $$f(D) = \begin{cases}
 \text{beneficial} & D < D_{\text{opt}} \\
@@ -110,7 +110,7 @@ Toxic dose
 - **PK-PD modeling**: Integrated prediction of dose → concentration → response
 
 ## Related Concepts
-- [[Bioinformatics/concepts/Hormesis]] - Non-monotonic dose-response (beneficial at low dose)
+- [[Bioinformatics/Concepts/Hormesis]] - Non-monotonic dose-response (beneficial at low dose)
 - [[Pharmacological Hormesis]] - Therapeutic exploitation of hormesis
 - [[Transfer Functions]] - Dose-response as input-output mapping
 - [[Temporal Pattern Sensitivity]] - Time-dependent dose-response

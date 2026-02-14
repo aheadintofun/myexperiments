@@ -23,7 +23,7 @@ The process by which B cells undergo iterative rounds of somatic hypermutation a
 - Mutated B cells migrate to light zone
 - Compete for [[Antigen Presentation|antigen displayed]] on FDCs
 - **High-affinity B cells** capture more antigen, receive survival signals from Tfh cells
-- **Low-affinity B cells** fail to capture antigen, undergo [[Bioinformatics/concepts/Autophagy|apoptosis]]
+- **Low-affinity B cells** fail to capture antigen, undergo [[Bioinformatics/Concepts/Autophagy|apoptosis]]
 - Surviving B cells return to dark zone for another round
 
 **3. Iteration**

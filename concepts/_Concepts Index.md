@@ -120,8 +120,8 @@ See [[Immune System as Phenotypic Boundary Hub]] for comprehensive overview.
 ### Therapeutic Inversions
 - [[Cachexia Inversion]] - Active anabolic dissection for enhancement
 - [[Selective Catabolism]] - Targeted breakdown of suboptimal components
-- [[Bioinformatics/concepts/Autophagy]] - Cellular self-digestion and recycling
-- [[Bioinformatics/concepts/Hormesis]] - Beneficial response to controlled stress
+- [[Bioinformatics/Concepts/Autophagy]] - Cellular self-digestion and recycling
+- [[Bioinformatics/Concepts/Hormesis]] - Beneficial response to controlled stress
 - [[Pharmacological Hormesis]] - Designed perturbations for vitality enhancement
 - [[Quality Control in Living Systems]] - Mechanisms ensuring component functionality
 

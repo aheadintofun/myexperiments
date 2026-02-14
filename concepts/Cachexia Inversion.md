@@ -36,7 +36,7 @@ The inversion is not cachexia's opposite (pure anabolism = cancer) but its **dua
 
 ## Related Concepts
 - [[Cachexia as Phase Transition]] - The pathology being inverted
-- [[Bioinformatics/concepts/Hormesis]] - Beneficial response to controlled stress
+- [[Bioinformatics/Concepts/Hormesis]] - Beneficial response to controlled stress
 - [[Selective Catabolism]] - Targeted breakdown of suboptimal components
 - [[Pharmacological Hormesis]] - Designed perturbations for vitality enhancement
 

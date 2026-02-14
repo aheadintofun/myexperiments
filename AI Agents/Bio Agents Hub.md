@@ -74,7 +74,7 @@ Use for: When you're stuck, when conventional approaches have failed
 | baker-protein-architect | [[04_Protein_Structure_Drug_Discovery]] | — |
 | topol-translational | [[06_Clinical_Biomedical_Informatics]] | [[07_Biomedical_Image_Analysis]] |
 | borlaug-agronomist | [[08_Plant_Biology_Agricultural_Genomics]] | [[02_Genomic_Variant_Analysis]] |
-| levin-morphogenesis | [[concepts/Morphogenesis]] | All (challenges assumptions) |
+| levin-morphogenesis | [[Morphogenesis]] | All (challenges assumptions) |
 
 ## Implementation as Claude Code Agents
 

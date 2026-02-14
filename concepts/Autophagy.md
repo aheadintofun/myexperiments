@@ -126,7 +126,7 @@ Autophagy declines with age:
 - [[Selective Catabolism]] - Autophagy as targeted quality control
 - [[Cachexia as Phase Transition]] - Excessive autophagy in pathological state
 - [[Cachexia Inversion]] - Rebalancing autophagy and anabolism
-- [[Bioinformatics/concepts/Hormesis]] - Mild stress-induced autophagy enhances function
+- [[Bioinformatics/Concepts/Hormesis]] - Mild stress-induced autophagy enhances function
 - [[Adaptive Response]] - Autophagy as adaptation to stress
 - [[Functional Capacity]] - Autophagy maintains cellular quality, function
 - [[Perturbation-Response-Adaptation]] - Starvation → autophagy → adaptation

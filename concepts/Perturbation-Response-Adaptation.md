@@ -57,7 +57,7 @@ The response is not instantaneous state change but a **[[Trajectory and Branchin
 - [[Trajectory and Branching Fate]] - Response as trajectory through state space
 - [[Clonal Architecture and Selection]] - Selection during adaptation
 - [[Context Conditionality]] - Response depends on context
-- [[Bioinformatics/concepts/Hormesis]] - Beneficial response to controlled stress
+- [[Bioinformatics/Concepts/Hormesis]] - Beneficial response to controlled stress
 - [[Temporal Pattern Sensitivity]] - Temporal structure of perturbation matters
 - [[Variant-Phenotype Mapping]] - Genetic basis of response variation
 

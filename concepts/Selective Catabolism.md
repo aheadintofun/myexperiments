@@ -43,8 +43,8 @@ Many signals that drive cachexia chronically drive beneficial selective cataboli
 
 ## Related Concepts
 - [[Cachexia Inversion]] - Therapeutic application
-- [[Bioinformatics/concepts/Autophagy]] - Cellular implementation
-- [[Bioinformatics/concepts/Hormesis]] - Controlled stress triggering selective response
+- [[Bioinformatics/Concepts/Autophagy]] - Cellular implementation
+- [[Bioinformatics/Concepts/Hormesis]] - Controlled stress triggering selective response
 - [[Quality Control in Living Systems]] - What determines "suboptimal"
 
 ## Tags

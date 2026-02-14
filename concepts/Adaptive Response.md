@@ -53,7 +53,7 @@ Not all responses are beneficial:
 - Example: Cardiac hypertrophy → heart failure
 
 ## Hormesis as Adaptive Response
-[[Bioinformatics/concepts/Hormesis]]: **Low-dose stress triggers adaptive responses exceeding baseline**:
+[[Bioinformatics/Concepts/Hormesis]]: **Low-dose stress triggers adaptive responses exceeding baseline**:
 - Perturbation → overcompensation
 - Brief stress → long-lasting enhancement
 - See [[Pharmacological Hormesis]] for therapeutic applications
@@ -102,7 +102,7 @@ Adaptive response as reinforcement learning:
 
 ## Related Concepts
 - [[Perturbation-Response-Adaptation]] - Full cycle including adaptation
-- [[Bioinformatics/concepts/Hormesis]] - Adaptive overcompensation to low-dose stress
+- [[Bioinformatics/Concepts/Hormesis]] - Adaptive overcompensation to low-dose stress
 - [[Pharmacological Hormesis]] - Therapeutic adaptive responses
 - [[Trajectory and Branching Fate]] - Adaptive trajectory through state space
 - [[Transfer Functions]] - Input-output mapping includes adaptive changes

@@ -8,7 +8,7 @@ The active maintenance of non-reactivity to self-antigens. Not the mere absence 
 ### Central Tolerance (Primary Lymphoid Organs)
 **Thymus (T cells)**:
 - Positive selection: T cells recognizing self-MHC survive
-- Negative selection: High-affinity self-reactive T cells deleted ([[Bioinformatics/concepts/Autophagy|apoptosis]])
+- Negative selection: High-affinity self-reactive T cells deleted ([[Bioinformatics/Concepts/Autophagy|apoptosis]])
 - AIRE-mediated expression: Tissue antigens displayed for tolerance induction
 - Result: ~95% of developing T cells eliminated
 
